@@ -126,23 +126,24 @@
   {
     "peak_climbing": [
       {
-        "title": "Amadablam Expedition in Nepal",
-        "description": "Climb the beautiful Ama Dablam in the Everest region, known for its challenging routes and stunning views.",
-        "duration": "26 Days",
-        "altitude": "6812m",
-        "image_url": "https://www.istockphoto.com/photos/ama-dablam"
+        "title": "Mustang, Saribung Peak Climb via Damodar Lake and Phu Valley",
+        "description": "An adventurous peak climbing journey through the remote Mustang region, combining Saribung Peak with the cultural richness of Damodar Kunda and Phu Valley.",
+        "duration": "28-30 Days",
+        "altitude": "6328m (Saribung Peak)",
+        "price": "From $4500",
+        "image_url": "https://www.shutterstock.com/search/saribung-peak-mustang"
       },
       {
-        "title": "Chulu West Peak Climbing",
-        "description": "Embark on an adventurous expedition to Chulu West Peak, offering a true mountaineering experience.",
-        "duration": "18 Days",
-        "altitude": "6419m",
-        "price": "From $2999",
-        "image_url": "https://www.shutterstock.com/search/chulu-west-peak"
+        "title": "Mera Peak Climbing",
+        "description": "Ascend Mera Peak, Nepal's highest trekking peak, known for its breathtaking vistas of five 8000m giants.",
+        "duration": "16 Days",
+        "altitude": "6476m",
+        "price": "From $2499",
+        "image_url": "https://www.shutterstock.com/search/mera-peak"
       },
       {
         "title": "Island Peak Climbing",
-        "description": "Climb the popular Island Peak, a favorite among trekkers seeking their first Himalayan summit.",
+        "description": "Climb the popular Island Peak (Imja Tse), a favorite among trekkers seeking their first Himalayan summit in the Everest region.",
         "duration": "16 Days",
         "altitude": "6187m",
         "price": "From $2299",
@@ -150,66 +151,126 @@
       },
       {
         "title": "Lobuche Peak Climbing",
-        "description": "Challenge yourself with a climb to Lobuche Peak, offering panoramic views of the Everest region.",
+        "description": "Challenge yourself with a climb to Lobuche East Peak, offering panoramic views of the Everest region including Everest, Lhotse, Nuptse, Ama Dablam.",
         "duration": "15 Days",
         "altitude": "6119m",
         "price": "From $2199",
         "image_url": "https://www.shutterstock.com/search/lobuche-peak"
       },
       {
-        "title": "Mera Peak Climbing",
-        "description": "Ascend Mera Peak, Nepal's highest trekking peak, known for its breathtaking vistas.",
-        "duration": "16 Days",
-        "altitude": "6476m",
-        "price": "From $2499",
-        "image_url": "https://www.shutterstock.com/search/mera-peak"
+        "title": "Everest Three Peak Climbing: Mera, Island, Lobuche Peak",
+        "description": "An ultimate climbing adventure tackling three iconic trekking peaks in the Everest region: Mera Peak, Island Peak, and Lobuche East.",
+        "duration": "28-32 Days",
+        "altitude": "Up to 6476m (Mera Peak)",
+        "price": "From $4800",
+        "image_url": "https://www.shutterstock.com/search/everest-three-peaks-climbing"
       },
       {
-        "title": "Pisang Peak Climbing",
-        "description": "Climb the fascinating Pisang Peak in the Annapurna region, offering technical challenges and scenic beauty.",
-        "duration": "14 Days",
-        "altitude": "6100m",
-        "image_url": "https://www.shutterstock.com/search/pisang-peak"
+        "title": "Chulu East Peak Climbing",
+        "description": "Embark on a rewarding climb of Chulu East in the Annapurna region, offering stunning views of the Annapurna and Dhaulagiri ranges.",
+        "duration": "19 Days",
+        "altitude": "6584m",
+        "price": "From $3200",
+        "image_url": "https://www.shutterstock.com/search/chulu-east-peak"
+      },
+      {
+        "title": "Tent Peak Climbing (Tharpu Chuli)",
+        "description": "Climb Tent Peak (Tharpu Chuli), located in the heart of the Annapurna Sanctuary, offering magnificent close-up views of Annapurna I and its surrounding peaks.",
+        "duration": "18 Days",
+        "altitude": "5663m",
+        "price": "From $2800",
+        "image_url": "https://www.shutterstock.com/search/tent-peak-tharpu-chuli"
+      },
+      {
+        "title": "Thorong Peak Climbing",
+        "description": "Combine the classic Annapurna Circuit trek with a climb of Thorong Peak, situated near the famous Thorong La Pass.",
+        "duration": "20 Days",
+        "altitude": "6144m",
+        "price": "From $3100",
+        "image_url": "https://www.shutterstock.com/search/thorong-peak"
       },
       {
         "title": "Yala Peak Climbing",
-        "description": "Experience the thrill of climbing Yala Peak, suitable for beginners seeking Himalayan adventure.",
+        "description": "Experience the thrill of climbing Yala Peak in the Langtang region, suitable for beginners seeking Himalayan adventure with great views of Shishapangma.",
         "duration": "11 Days",
         "altitude": "5520m",
         "price": "From $1099",
         "image_url": "https://www.shutterstock.com/search/yala-peak"
+      },
+      {
+        "title": "Amadablam Expedition in Nepal",
+        "description": "Climb the beautiful Ama Dablam in the Everest region, known for its challenging routes and stunning views. (Note: Often considered a full expedition rather than just a trekking peak).",
+        "duration": "26 Days",
+        "altitude": "6812m",
+        "image_url": "https://www.istockphoto.com/photos/ama-dablam"
+      },
+      {
+        "title": "Chulu West Peak Climbing",
+        "description": "Embark on an adventurous expedition to Chulu West Peak, a more challenging climb in the Annapurna Massif.",
+        "duration": "18 Days",
+        "altitude": "6419m",
+        "price": "From $2999",
+        "image_url": "https://www.shutterstock.com/search/chulu-west-peak"
+      },
+      {
+        "title": "Pisang Peak Climbing",
+        "description": "Climb the fascinating Pisang Peak in the Annapurna region, offering technical challenges and scenic beauty along the Annapurna Circuit route.",
+        "duration": "14 Days",
+        "altitude": "6091m",
+        "image_url": "https://www.shutterstock.com/search/pisang-peak"
       }
     ]
   },
   {
     "nepal_expeditions": [
       {
-        "title": "Annapurna Expedition in Nepal",
-        "description": "Embark on a lifetime adventure to summit Annapurna, the world's tenth highest mountain.",
-        "duration": "25 Days",
-        "altitude": "8100m",
+        "title": "Mt Everest Expedition",
+        "description": "Embark on the ultimate mountaineering challenge to summit Mt Everest, the world's highest peak.",
+        "duration": "60 Days",
+        "altitude": "8848m",
+        "image_url": "https://www.shutterstock.com/search/mount-everest-expedition"
+      },
+      {
+        "title": "Dhaulagiri Expedition",
+        "description": "Challenge yourself with an expedition to Dhaulagiri, the seventh highest mountain in the world.",
+        "duration": "45 Days",
+        "altitude": "8167m",
+        "image_url": "https://www.shutterstock.com/search/dhaulagiri-expedition"
+      },
+      {
+        "title": "Kanchenjunga Expedition",
+        "description": "Attempt to summit Kanchenjunga, the third highest mountain globally, offering a remote and demanding climb.",
+        "duration": "55 Days",
+        "altitude": "8586m",
+        "image_url": "https://www.shutterstock.com/search/kanchenjunga-expedition"
+      },
+      {
+        "title": "Annapurna Expedition",
+        "description": "Take on the formidable Annapurna I, known for its technical difficulty and stunning beauty.",
+        "duration": "50 Days",
+        "altitude": "8091m",
         "image_url": "https://www.shutterstock.com/search/annapurna-expedition"
       },
       {
-        "title": "Baruntse Expedition",
-        "description": "Challenge yourself with the Baruntse Expedition, known for its technical climbs and stunning scenery.",
-        "duration": "35 Days",
-        "altitude": "7129m",
-        "image_url": "https://www.shutterstock.com/search/baruntse-expedition"
+        "title": "Makalu Expedition",
+        "description": "Climb Makalu, the fifth highest mountain in the world, featuring impressive technical sections.",
+        "duration": "50 Days",
+        "altitude": "8485m",
+        "image_url": "https://www.shutterstock.com/search/makalu-expedition"
       },
       {
-        "title": "Cho Oyu Expedition in Nepal",
-        "description": "Climb Cho Oyu, the world's sixth highest mountain, offering a less crowded yet rewarding experience.",
+        "title": "Manaslu Expedition with Helicopter",
+        "description": "Ascend Manaslu, the eighth highest peak, with the added convenience of helicopter support for logistics or return.",
         "duration": "45 Days",
-        "altitude": "8201m",
-        "image_url": "https://www.shutterstock.com/search/cho-oyu-expedition"
+        "altitude": "8163m",
+        "image_url": "https://www.shutterstock.com/search/manaslu-expedition-helicopter"
       },
       {
-        "title": "Everest Expedition in Nepal",
-        "description": "Take on the ultimate mountaineering challenge by summiting Mount Everest from the south col.",
-        "duration": "60 Days",
-        "altitude": "8848m",
-        "image_url": "https://www.shutterstock.com/search/everest-expedition"
+        "title": "Manaslu Expedition",
+        "description": "Embark on a classic expedition to summit Manaslu, offering a rewarding climb in a restricted region.",
+        "duration": "45 Days",
+        "altitude": "8163m",
+        "image_url": "https://www.shutterstock.com/search/manaslu-expedition"
       }
     ]
   },
