@@ -424,6 +424,34 @@
     ]
   },
   {
+    "biking_tours": [
+      {
+        "title": "Upper Mustang Biking Tour",
+        "description": "Embark on an adventurous mountain biking journey through the arid landscapes and ancient Tibetan culture of Upper Mustang.",
+        "duration": "10-14 Days",
+        "difficulty": "Challenging",
+        "price": "From $2200",
+        "image_url": "https://www.shutterstock.com/search/upper-mustang-biking"
+      },
+      {
+        "title": "Annapurna Circuit Biking Tour",
+        "description": "Experience the classic Annapurna Circuit on two wheels, cycling through diverse terrains, high passes, and charming villages.",
+        "duration": "12-16 Days",
+        "difficulty": "Strenuous",
+        "price": "From $1800",
+        "image_url": "https://www.shutterstock.com/search/annapurna-circuit-biking"
+      },
+      {
+        "title": "Annapurna Circuit with Upper Mustang Biking Tour",
+        "description": "A grand biking adventure combining the best of the Annapurna Circuit with the unique, restricted region of Upper Mustang.",
+        "duration": "18-22 Days",
+        "difficulty": "Very Strenuous",
+        "price": "From $3500",
+        "image_url": "https://www.shutterstock.com/search/annapurna-mustang-biking"
+      }
+    ]
+  },
+  {
     "helicopter_tours": [
       {
         "title": "Langtang Helicopter Tour",
