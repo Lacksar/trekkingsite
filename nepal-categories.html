@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nepal Trips - Adventure Categories - Himalayan Peaks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-bg-nepal-categories {
+        /* Using a more subtle hero if the main title is below */
+        background-image: url("https://www.nepalhightrek.com/wp-content/uploads/2023/10/Annapurna-Base-Camp-Trek-3-768x384.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 30vh; /* Shorter hero */
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in-section {
+        opacity: 0;
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+
+      /* Styles for the new category card design */
+      .category-card-image {
+        transition: transform 0.3s ease-out;
+      }
+      .category-card:hover .category-card-image {
+        transform: scale(1.05);
+      }
+
+      .section-title-underline {
+        display: inline-block;
+        position: relative;
+      }
+      .section-title-underline::after {
+        content: "";
+        position: absolute;
+        bottom: -8px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px; /* Width of the underline */
+        height: 3px; /* Thickness of the underline */
+        background-color: #f59e0b; /* Tailwind yellow-500 */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Header Section -->
+    <header
+      id="home-nepal-categories"
+      class="relative flex flex-col h-screen hero-bg-nepal-categories"
+    >
+      <nav class="absolute top-0 left-0 right-0 z-20 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+          <a
+            href="index.html"
+            class="text-white text-3xl font-bold tracking-tight"
+          >
+            Himalayan<span class="text-yellow-400">Peaks</span>
+          </a>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="index.html#home"
+              class="text-white hover:text-yellow-400 transition-colors duration-300"
+              >Home</a
+            >
+            <a
+              href="index.html#destinations"
+              class="text-white hover:text-yellow-400 transition-colors duration-300"
+              >Destinations</a
+            >
+            <a
+              href="index.html#reviews"
+              class="text-white hover:text-yellow-400 transition-colors duration-300"
+              >Reviews</a
+            >
+            <a
+              href="index.html#contact"
+              class="text-white hover:text-yellow-400 transition-colors duration-300"
+              >Contact</a
+            >
+          </div>
+          <button
+            id="mobile-menu-button-categories"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div
+        id="mobile-menu-categories"
+        class="hidden md:hidden absolute top-16 left-0 right-0 bg-black bg-opacity-90 z-10 p-4"
+      >
+        <a
+          href="index.html#home"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Home</a
+        >
+        <a
+          href="index.html#destinations"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Destinations</a
+        >
+        <a
+          href="index.html#reviews"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Reviews</a
+        >
+        <a
+          href="index.html#contact"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Contact</a
+        >
+      </div>
+      <!-- Minimal Hero Content if title is below -->
+      <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+      <div
+        class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4"
+      >
+        <h1
+          class="text-4xl md:text-7xl text-white font-bold drop-shadow-lg fade-in-section"
+        >
+          Trips in <span class="text-orange-500">Nepal</span>
+        </h1>
+      </div>
+    </header>
+
+    <main id="nepal-categories-container" class="py-12 md:py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <center>
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-700 section-title-underline"
+          >
+            Nepal Trips
+          </h2>
+        </center>
+        <p
+          id="loading-categories-message"
+          class="text-center text-gray-600 text-xl"
+        >
+          Loading adventure categories...
+        </p>
+        <div
+          id="categories-grid"
+          class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 md:mr-40 md:ml-40 ml-10 mr-10"
+        >
+          <!-- Category cards will be dynamically injected here -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Reused Footer Section -->
+    <footer id="contact-categories" class="bg-gray-900 text-gray-400 py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div>
+            <h4 class="text-xl font-semibold text-white mb-4">
+              Himalayan<span class="text-yellow-400">Peaks</span>
+            </h4>
+            <p class="text-sm mb-4 leading-relaxed">
+              Trusted partner for Himalayan adventures.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
+                ><i class="fab fa-facebook-f fa-lg"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="index.html" class="hover:text-yellow-400">Home</a>
+              </li>
+              <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+              <li>
+                <a href="index.html#destinations" class="hover:text-yellow-400"
+                  >Destinations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-yellow-400">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+            <address class="text-sm not-italic space-y-2">
+              <p>
+                <i class="fas fa-map-marker-alt mr-2 text-yellow-400"></i
+                >Kathmandu, Nepal
+              </p>
+              <p>
+                <i class="fas fa-phone mr-2 text-yellow-400"></i>+977 12345678
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-2 text-yellow-400"></i
+                >info@himalayanpeaks.com
+              </p>
+            </address>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-4">Newsletter</h4>
+            <form action="#" method="POST" class="flex">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full px-4 py-2 text-gray-800 rounded-l-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              />
+              <button
+                type="submit"
+                class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 py-2 rounded-r-md"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+          <p class="text-sm">
+            © <span id="currentYearCategories"></span> HimalayanPeaks. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButtonCategories = document.getElementById(
+        "mobile-menu-button-categories"
+      );
+      const mobileMenuCategories = document.getElementById(
+        "mobile-menu-categories"
+      );
+      if (mobileMenuButtonCategories && mobileMenuCategories) {
+        mobileMenuButtonCategories.addEventListener("click", () => {
+          mobileMenuCategories.classList.toggle("hidden");
+        });
+        mobileMenuCategories.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenuCategories.classList.add("hidden");
+          });
+        });
+      }
+
+      const currentYearElCategories = document.getElementById(
+        "currentYearCategories"
+      );
+      if (currentYearElCategories)
+        currentYearElCategories.textContent = new Date().getFullYear();
+
+      function formatCategoryTitle(key) {
+        // Custom formatting to match "Trekking Trips", "Package Tour" etc.
+        let title = key
+          .replace(/_/g, " ")
+          .replace("nepal ", "")
+          .replace(" in nepal", ""); // remove "nepal"
+        title = title.replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize
+        if (title.toLowerCase() === "package tours") return "Package Tour"; // Specific case
+        if (title.toLowerCase().includes("trekking")) return "Trekking Trips";
+        return title;
+      }
+
+      // Map category keys to image URLs - **REPLACE WITH YOUR ACTUAL IMAGES**
+      // Thematically matched to your example where possible
+      const categoryImages = {
+        trekking_trips:
+          "https://images.pexels.com/photos/2398230/pexels-photo-2398230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Mountain sunrise (Poon Hill like)
+        package_tours:
+          "https://images.pexels.com/photos/1603669/pexels-photo-1603669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Bhaktapur Durbar Square like
+        peak_climbing:
+          "https://images.pexels.com/photos/713665/pexels-photo-713665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Climber on snowy peak
+        nepal_expeditions:
+          "https://images.pexels.com/photos/1183021/pexels-photo-1183021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Ama Dablam like for expedition
+        nepal_rafting:
+          "https://images.pexels.com/photos/1655650/pexels-photo-1655650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Rafting action
+        default:
+          "https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Generic Nepal for other categories
+      };
+
+      function createCategoryCard(categoryKey) {
+        const formattedTitle = formatCategoryTitle(categoryKey);
+        const imageUrl =
+          categoryImages[categoryKey] || categoryImages["default"];
+        const categoryLink = `nepal-activities-by-category.html?category=${categoryKey}`;
+        const placeholderImageOnError =
+          "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
+
+        return `
+          <a href="${categoryLink}" class="category-card block  rounded-lg  overflow-hidden group transform transition-all duration-300 ease-out  mt-20">
+              <div class="relative  h-96 md:h-96 overflow-hidden"> 
+                  <img src="${imageUrl}" alt="${formattedTitle}" class="category-card-image w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='${placeholderImageOnError}';">
+              </div>
+              <div class="p-4 text-center">
+                  <h3 class="text-3xl font-semibold text-gray-700 group-hover:text-yellow-600 transition-colors">${formattedTitle}</h3>
+              </div>
+          </a>
+        `;
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const gridContainer = document.getElementById("categories-grid");
+        const loadingMessage = document.getElementById(
+          "loading-categories-message"
+        );
+
+        fetch("data.json")
+          .then((response) => {
+            if (!response.ok)
+              throw new Error(`HTTP error! status: ${response.status}`);
+            return response.json();
+          })
+          .then((data) => {
+            if (loadingMessage) loadingMessage.remove();
+
+            let categoriesHtml = "";
+            data.forEach((categoryObject) => {
+              const categoryKey = Object.keys(categoryObject)[0];
+              // const itemsArray = categoryObject[categoryKey]; // Not needed for this card style
+              // const itemsCount = itemsArray ? itemsArray.length : 0; // Not needed
+
+              if (categoryKey) {
+                categoriesHtml += createCategoryCard(categoryKey);
+              }
+            });
+            gridContainer.innerHTML = categoriesHtml;
+
+            const animatedCards =
+              gridContainer.querySelectorAll(".category-card");
+            animatedCards.forEach((card, index) => {
+              card.style.opacity = "0";
+              card.style.transform = "translateY(20px)"; // Start slightly lower
+              card.style.transition = `opacity 0.5s ease-out ${
+                index * 0.1
+              }s, transform 0.5s ease-out ${index * 0.1}s`;
+
+              const observer = new IntersectionObserver(
+                (entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.style.opacity = "1";
+                      entry.target.style.transform = "translateY(0)";
+                      observer.unobserve(entry.target);
+                    }
+                  });
+                },
+                { threshold: 0.1 }
+              );
+              observer.observe(card);
+            });
+          })
+          .catch((error) => {
+            console.error("Error fetching or processing data:", error);
+            if (loadingMessage) loadingMessage.remove();
+            gridContainer.innerHTML = `<p class="text-center text-red-600 text-xl col-span-full">Could not load adventure categories. Please try again later. <br><small>${error.message}</small></p>`;
+          });
+      });
+    </script>
+  </body>
+</html>

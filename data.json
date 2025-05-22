@@ -1,0 +1,266 @@
+[
+  {
+    "trekking_trips": [
+      {
+        "title": "Annapurna Region Trekking",
+        "description": "Explore the diverse landscapes of the Annapurna region, offering panoramic mountain views and rich cultural experiences.",
+        "image_url": "https://www.halfwayanywhere.com/wp-content/uploads/2016/11/Annapurna-Circuit-Mountain.jpg"
+      },
+      {
+        "title": "Langtang Region Trekking",
+        "description": "Discover the serene beauty of the Langtang Valley, nestled close to Kathmandu, featuring lush forests and traditional villages.",
+        "image_url": "https://media.gettyimages.com/photos/rear-view-of-trekker-sitting-on-the-top-of-tsergo-ri-4990m-the-high-picture-id1317322631"
+      },
+      {
+        "title": "Everest Region Trekking",
+        "description": "Embark on a journey to the base of the world's highest peak, experiencing Sherpa culture and breathtaking Himalayan vistas.",
+        "image_url": "https://www.halfwayanywhere.com/wp-content/uploads/2016/10/Everest-Base-Camp-Trek-Everest-Peak.jpg"
+      },
+      {
+        "title": "Wilderness Region Trekking",
+        "description": "Venture into the less-traveled paths of Nepal's wilderness regions, offering solitude and untouched natural beauty.",
+        "image_url": "https://www.shutterstock.com/image-photo/trekking-nepal-himalayas-260nw-123456789.jpg"
+      },
+      {
+        "title": "New Trekking Route",
+        "description": "Explore newly opened trekking routes in Nepal, providing fresh adventures and unique cultural encounters.",
+        "image_url": "https://mountainrocktreks.com/uploads/trekking/annapurna-base-camp-trek.jpg"
+      }
+    ]
+  },
+
+  {
+    "package_tours": [
+      {
+        "title": "Kathmandu Chitwan Tour",
+        "description": "Experience the cultural richness of Kathmandu and the wildlife adventures of Chitwan National Park.",
+        "duration": "7 Days",
+        "altitude": "600m",
+        "price": "From $",
+        "image_url": "https://www.tripadvisor.com/LocationPhotoDirectLink-g293890-d12955285-i391934922-7_Nights_8_days_Kathmandu_Pokhara_and_Chitwan_Tour_in_Nepal-Kathmandu_Kathmandu_Valley_Bagm.html"
+      },
+      {
+        "title": "Bandipur Pokhara Tour",
+        "description": "Discover the charm of Bandipur and the scenic beauty of Pokhara in this short yet thrilling tour.",
+        "image_url": "https://www.istockphoto.com/photos/bandipur-nepal"
+      },
+      {
+        "title": "Bungy Jump in Nepal",
+        "description": "Experience the thrill of bungy jumping in Nepal, an adventure that promises an adrenaline rush.",
+        "duration": "1 Day",
+        "altitude": "800m",
+        "image_url": "https://www.instagram.com/p/CE4wKx9jZlD/"
+      },
+      {
+        "title": "Helicopter Tour In Nepal",
+        "description": "Enjoy aerial views of Nepal's majestic mountains with our exclusive helicopter tours.",
+        "duration": "1 Day",
+        "altitude": "5000m",
+        "price": "From $4500",
+        "image_url": "https://pixabay.com/photos/everest-base-camp-helicopter-tour-1234567/"
+      },
+      {
+        "title": "Kathmandu Chitwan Lumbini Via Pokhara Tour",
+        "description": "A comprehensive tour covering Kathmandu, Chitwan, Lumbini, and Pokhara, offering cultural and natural insights.",
+        "duration": "14 Days",
+        "altitude": "1400m",
+        "image_url": "https://www.tripadvisor.com/AttractionProductReview-g293890-d20825151-7_Days_Kathmandu_Pokhara_Chitwan_and_Lumbini_Tour-Kathmandu_Kathmandu_Valley_Bagma.html"
+      },
+      {
+        "title": "Kathmandu Chitwan Pokhara Package Tour",
+        "description": "Explore the highlights of Kathmandu, Chitwan, and Pokhara in this well-rounded package tour.",
+        "duration": "9 Days",
+        "altitude": "820m",
+        "price": "From $1199",
+        "image_url": "https://www.culturalsafaritours.com/tourpackage/kathmandu-chitwan-pokhara-tour-package"
+      },
+      {
+        "title": "Kathmandu Valley Tour",
+        "description": "Embark on a one-day tour of Kathmandu Valley, visiting UNESCO World Heritage sites and experiencing local culture.",
+        "duration": "1 Day",
+        "altitude": "1400m",
+        "price": "From $70",
+        "image_url": "https://www.gettyimages.com/photos/kathmandu-valley"
+      },
+      {
+        "title": "Mountain Flight in Nepal",
+        "description": "Take a scenic mountain flight to witness the grandeur of the Himalayas, including Mount Everest.",
+        "duration": "1 Day",
+        "altitude": "5000m",
+        "image_url": "https://www.shutterstock.com/search/mountain-flight-nepal"
+      },
+      {
+        "title": "Paragliding in Nepal",
+        "description": "Soar above the landscapes of Nepal with our paragliding adventures, offering stunning aerial views.",
+        "duration": "1 Day",
+        "altitude": "2000m",
+        "image_url": "https://www.gettyimages.com/photos/paragliding-in-nepal"
+      }
+    ]
+  },
+
+  {
+    "peak_climbing": [
+      {
+        "title": "Amadablam Expedition in Nepal",
+        "description": "Climb the beautiful Ama Dablam in the Everest region, known for its challenging routes and stunning views.",
+        "duration": "26 Days",
+        "altitude": "6812m",
+        "image_url": "https://www.istockphoto.com/photos/ama-dablam"
+      },
+      {
+        "title": "Chulu West Peak Climbing",
+        "description": "Embark on an adventurous expedition to Chulu West Peak, offering a true mountaineering experience.",
+        "duration": "18 Days",
+        "altitude": "6419m",
+        "price": "From $2999",
+        "image_url": "https://www.shutterstock.com/search/chulu-west-peak"
+      },
+      {
+        "title": "Island Peak Climbing",
+        "description": "Climb the popular Island Peak, a favorite among trekkers seeking their first Himalayan summit.",
+        "duration": "16 Days",
+        "altitude": "6187m",
+        "price": "From $2299",
+        "image_url": "https://www.shutterstock.com/search/island-peak-nepal"
+      },
+      {
+        "title": "Lobuche Peak Climbing",
+        "description": "Challenge yourself with a climb to Lobuche Peak, offering panoramic views of the Everest region.",
+        "duration": "15 Days",
+        "altitude": "6119m",
+        "price": "From $2199",
+        "image_url": "https://www.shutterstock.com/search/lobuche-peak"
+      },
+      {
+        "title": "Mera Peak Climbing",
+        "description": "Ascend Mera Peak, Nepal's highest trekking peak, known for its breathtaking vistas.",
+        "duration": "16 Days",
+        "altitude": "6476m",
+        "price": "From $2499",
+        "image_url": "https://www.shutterstock.com/search/mera-peak"
+      },
+      {
+        "title": "Pisang Peak Climbing",
+        "description": "Climb the fascinating Pisang Peak in the Annapurna region, offering technical challenges and scenic beauty.",
+        "duration": "14 Days",
+        "altitude": "6100m",
+        "image_url": "https://www.shutterstock.com/search/pisang-peak"
+      },
+      {
+        "title": "Yala Peak Climbing",
+        "description": "Experience the thrill of climbing Yala Peak, suitable for beginners seeking Himalayan adventure.",
+        "duration": "11 Days",
+        "altitude": "5520m",
+        "price": "From $1099",
+        "image_url": "https://www.shutterstock.com/search/yala-peak"
+      }
+    ]
+  },
+
+  {
+    "nepal_expeditions": [
+      {
+        "title": "Annapurna Expedition in Nepal",
+        "description": "Embark on a lifetime adventure to summit Annapurna, the world's tenth highest mountain.",
+        "duration": "25 Days",
+        "altitude": "8100m",
+        "image_url": "https://www.shutterstock.com/search/annapurna-expedition"
+      },
+      {
+        "title": "Baruntse Expedition",
+        "description": "Challenge yourself with the Baruntse Expedition, known for its technical climbs and stunning scenery.",
+        "duration": "35 Days",
+        "altitude": "7129m",
+        "image_url": "https://www.shutterstock.com/search/baruntse-expedition"
+      },
+      {
+        "title": "Cho Oyu Expedition in Nepal",
+        "description": "Climb Cho Oyu, the world's sixth highest mountain, offering a less crowded yet rewarding experience.",
+        "duration": "45 Days",
+        "altitude": "8201m",
+        "image_url": "https://www.shutterstock.com/search/cho-oyu-expedition"
+      },
+      {
+        "title": "Everest Expedition in Nepal",
+        "description": "Take on the ultimate mountaineering challenge by summiting Mount Everest from the south col.",
+        "duration": "60 Days",
+        "altitude": "8848m",
+        "image_url": "https://www.shutterstock.com/search/everest-expedition"
+      }
+    ]
+  },
+
+  {
+    "nepal_rafting": [
+      {
+        "title": "Bhotekoshi River Rafting",
+        "description": "Experience the thrill of whitewater rafting on the Bhotekoshi River, known for its challenging rapids.",
+        "duration": "1 Day",
+        "image_url": "https://www.shutterstock.com/search/bhotekoshi-river-rafting"
+      },
+      {
+        "title": "Kali Gandaki River Rafting",
+        "description": "Navigate the Kali Gandaki, one of Nepal’s most adventurous rivers, passing through gorges and remote villages.",
+        "duration": "3 Days",
+        "image_url": "https://www.shutterstock.com/search/kali-gandaki-river-rafting"
+      },
+      {
+        "title": "Karnali River Rafting",
+        "description": "Enjoy a long and exhilarating rafting experience on Nepal’s longest and mightiest river, the Karnali.",
+        "duration": "10 Days",
+        "image_url": "https://www.shutterstock.com/search/karnali-river-rafting"
+      },
+      {
+        "title": "Seti River Rafting",
+        "description": "Perfect for beginners and families, the Seti River offers gentle rapids and beautiful scenery.",
+        "duration": "2 Days",
+        "image_url": "https://www.shutterstock.com/search/seti-river-rafting"
+      },
+      {
+        "title": "Sunkoshi River Rafting",
+        "description": "A classic multi-day rafting trip, the Sunkoshi offers both thrilling rapids and serene float sections.",
+        "duration": "9 Days",
+        "image_url": "https://www.shutterstock.com/search/sunkoshi-river-rafting"
+      },
+      {
+        "title": "Trishuli River Rafting",
+        "description": "The most popular rafting river in Nepal, ideal for a short adventure from Kathmandu or Pokhara.",
+        "duration": "1-2 Days",
+        "image_url": "https://www.shutterstock.com/search/trishuli-river-rafting"
+      }
+    ]
+  },
+  {
+    "chitwan_jungle_safari": {
+      "title": "Chitwan Jungle Safari",
+      "description": "Explore Nepal’s first national park, Chitwan National Park, home to endangered species like the one-horned rhinoceros and Bengal tiger. Enjoy jeep safaris, canoe rides, bird watching, and Tharu cultural performances.",
+      "duration": "2-3 Days",
+      "image_url": "https://www.shutterstock.com/search/chitwan-jungle-safari"
+    }
+  },
+  {
+    "nepal_paragliding": {
+      "title": "Paragliding in Nepal",
+      "description": "Fly high above the Himalayas with tandem paragliding in Pokhara, one of the world's top paragliding destinations. Witness stunning aerial views of the Annapurna range and Phewa Lake.",
+      "duration": "30 Minutes to 1 Hour",
+      "image_url": "https://www.shutterstock.com/search/paragliding-in-nepal"
+    }
+  },
+  {
+    "bunzy_jump_in_nepal": {
+      "title": "Bungee Jump in Nepal",
+      "description": "Leap off Nepal's iconic bungee jump bridges above the roaring Bhote Koshi River. This adrenaline-pumping activity is a favorite for thrill-seekers visiting Nepal.",
+      "duration": "1 Day",
+      "image_url": "https://www.shutterstock.com/search/bungee-jump-nepal"
+    }
+  },
+  {
+    "mountain_flight_in_nepal": {
+      "title": "Mountain Flight in Nepal",
+      "description": "Enjoy a breathtaking flightseeing experience over the Himalayan range. Witness Mount Everest and other 8000m peaks without the need for trekking.",
+      "duration": "1 Hour",
+      "image_url": "https://www.shutterstock.com/search/mountain-flight-nepal"
+    }
+  }
+]
