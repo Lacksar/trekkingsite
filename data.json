@@ -6,12 +6,37 @@
         "description": "Explore the diverse landscapes of the Annapurna region, offering panoramic mountain views and rich cultural experiences.",
         "image_url": "https://www.halfwayanywhere.com/wp-content/uploads/2016/11/Annapurna-Circuit-Mountain.jpg",
         "available_treks": [
-          "Annapurna Base Camp Trek",
-          "Mardi Himal Trekking",
-          "Annapurna Circuit Trek",
-          "Ghorepani Poonhill Trek",
-          "Annapurna Panorama Trek",
-          "Annapurna Base Camp Trek From Pokhara"
+          {
+            "name": "Annapurna Base Camp Trek",
+            "current_price": 1350,
+            "duration": "10-12 Days"
+          },
+          {
+            "name": "Mardi Himal Trekking",
+            "current_price": 950,
+            "duration": "7-9 Days"
+          },
+          {
+            "name": "Annapurna Circuit Trek",
+            "current_price": 1500,
+            "original_price": 1650,
+            "duration": "14-18 Days"
+          },
+          {
+            "name": "Ghorepani Poonhill Trek",
+            "current_price": 750,
+            "duration": "4-5 Days"
+          },
+          {
+            "name": "Annapurna Panorama Trek",
+            "current_price": 800,
+            "duration": "6-7 Days"
+          },
+          {
+            "name": "Annapurna Base Camp Trek From Pokhara",
+            "current_price": 1300,
+            "duration": "9-11 Days"
+          }
         ]
       },
       {
@@ -19,12 +44,36 @@
         "description": "Discover the serene beauty of the Langtang Valley, nestled close to Kathmandu, featuring lush forests and traditional villages.",
         "image_url": "https://media.gettyimages.com/photos/rear-view-of-trekker-sitting-on-the-top-of-tsergo-ri-4990m-the-high-picture-id1317322631",
         "available_treks": [
-          "Langtang Valley Trek",
-          "Shivapuri Nagarkot Trek",
-          "Tamang Heritage & Langtang Valley Trek",
-          "Gosaikunda Helambu Trek",
-          "Langtang Gosaikunda Circuit Trekking",
-          "Langtang Valley and Gosaikunda Trek"
+          {
+            "name": "Langtang Valley Trek",
+            "current_price": 1100,
+            "duration": "8-10 Days"
+          },
+          {
+            "name": "Shivapuri Nagarkot Trek",
+            "current_price": 450,
+            "duration": "3 Days"
+          },
+          {
+            "name": "Tamang Heritage & Langtang Valley Trek",
+            "current_price": 1400,
+            "duration": "12-14 Days"
+          },
+          {
+            "name": "Gosaikunda Helambu Trek",
+            "current_price": 1250,
+            "duration": "10-13 Days"
+          },
+          {
+            "name": "Langtang Gosaikunda Circuit Trekking",
+            "current_price": 1550,
+            "duration": "15-17 Days"
+          },
+          {
+            "name": "Langtang Valley and Gosaikunda Trek",
+            "current_price": 1450,
+            "duration": "13-15 Days"
+          }
         ]
       },
       {
@@ -32,14 +81,51 @@
         "description": "Embark on a journey to the base of the world's highest peak, experiencing Sherpa culture and breathtaking Himalayan vistas.",
         "image_url": "https://www.halfwayanywhere.com/wp-content/uploads/2016/10/Everest-Base-Camp-Trek-Everest-Peak.jpg",
         "available_treks": [
-          "Luxury Everest Base Camp Trek",
-          "Everest Base Camp Trek",
-          "Mount Everest Base Camp Trek - 12 days",
-          "Everest Three High Passes Trekking",
-          "Gokyo Valley and Everest Base Camp Trek",
-          "Gokyo Renjo La Pass Trekking",
-          "EBC Chola Gokyo Lake Trekking",
-          "Everest Panorama Trek"
+          {
+            "name": "Luxury Everest Base Camp Trek",
+            "current_price": 2300,
+            "original_price": 2500,
+            "duration": "14-16 Days"
+          },
+          {
+            "name": "Everest Base Camp Trek",
+            "current_price": 1800,
+            "duration": "12-14 Days"
+          },
+          {
+            "name": "Mount Everest Base Camp Trek - 12 days",
+            "current_price": 1950,
+            "original_price": 2200,
+            "duration": "12 Days"
+          },
+          {
+            "name": "Everest Three High Passes Trekking",
+            "current_price": 2800,
+            "duration": "18-21 Days"
+          },
+          {
+            "name": "Gokyo Valley and Everest Base Camp Trek",
+            "current_price": 2650,
+            "original_price": 2900,
+            "duration": "16-18 Days"
+          },
+          {
+            "name": "Gokyo Renjo La Pass Trekking",
+            "current_price": 2400,
+            "duration": "14-16 Days"
+          },
+          {
+            "name": "EBC Chola Gokyo Lake Trekking",
+            "current_price": 2750,
+            "original_price": 3000,
+            "discount_tag": "10% OFF",
+            "duration": "17-19 Days"
+          },
+          {
+            "name": "Everest Panorama Trek",
+            "current_price": 1200,
+            "duration": "7-9 Days"
+          }
         ]
       },
       {
@@ -57,69 +143,92 @@
   {
     "package_tours": [
       {
-        "title": "Kathmandu Chitwan Tour",
-        "description": "Experience the cultural richness of Kathmandu and the wildlife adventures of Chitwan National Park.",
-        "duration": "7 Days",
-        "altitude": "600m",
-        "price": "From $",
-        "image_url": "https://www.tripadvisor.com/LocationPhotoDirectLink-g293890-d12955285-i391934922-7_Nights_8_days_Kathmandu_Pokhara_and_Chitwan_Tour_in_Nepal-Kathmandu_Kathmandu_Valley_Bagm.html"
+        "title": "Nepal Highlight Tour",
+        "description": "Experience the best of Nepal's cultural and natural wonders in this comprehensive highlight tour.",
+        "duration": "10 Days",
+        "altitude": "1400m (Kathmandu)",
+        "price": "From $1200",
+        "image_url": "https://www.shutterstock.com/search/nepal-highlight-tour"
       },
       {
-        "title": "Bandipur Pokhara Tour",
-        "description": "Discover the charm of Bandipur and the scenic beauty of Pokhara in this short yet thrilling tour.",
-        "image_url": "https://www.istockphoto.com/photos/bandipur-nepal"
+        "title": "Upper Mustang Jeep Tour",
+        "description": "Explore the forbidden kingdom of Upper Mustang by jeep, witnessing unique landscapes and ancient Tibetan culture.",
+        "duration": "12-14 Days",
+        "altitude": "3800m (Lo Manthang)",
+        "price": "From $2500",
+        "image_url": "https://www.shutterstock.com/search/upper-mustang-jeep-tour"
       },
       {
-        "title": "Bungy Jump in Nepal",
-        "description": "Experience the thrill of bungy jumping in Nepal, an adventure that promises an adrenaline rush.",
+        "title": "Everest Honeymoon Tour",
+        "description": "A romantic getaway with stunning views of Mount Everest, perfect for honeymooners seeking adventure and serenity.",
+        "duration": "5-7 Days",
+        "altitude": "3880m (Hotel Everest View)",
+        "price": "From $1500",
+        "image_url": "https://www.shutterstock.com/search/everest-honeymoon-tour"
+      },
+      {
+        "title": "Annapurna Hiking Tour",
+        "description": "Enjoy breathtaking hikes in the Annapurna region, suitable for various fitness levels, offering stunning mountain vistas.",
+        "duration": "7-10 Days",
+        "altitude": "3210m (Poon Hill)",
+        "price": "From $900",
+        "image_url": "https://www.shutterstock.com/search/annapurna-hiking-tour"
+      },
+      {
+        "title": "Nagarkot Tour",
+        "description": "Witness spectacular sunrise and sunset views over the Himalayas from Nagarkot, a popular hill station near Kathmandu.",
+        "duration": "2 Days",
+        "altitude": "2195m",
+        "price": "From $150",
+        "image_url": "https://www.shutterstock.com/search/nagarkot-tour"
+      },
+      {
+        "title": "Kathmandu Buddhist Monuments Tour",
+        "description": "Explore the sacred Buddhist stupas and monasteries of Kathmandu Valley, including Boudhanath and Swayambhunath.",
         "duration": "1 Day",
-        "altitude": "800m",
-        "image_url": "https://www.instagram.com/p/CE4wKx9jZlD/"
-      },
-      {
-        "title": "Helicopter Tour In Nepal",
-        "description": "Enjoy aerial views of Nepal's majestic mountains with our exclusive helicopter tours.",
-        "duration": "1 Day",
-        "altitude": "5000m",
-        "price": "From $4500",
-        "image_url": "https://pixabay.com/photos/everest-base-camp-helicopter-tour-1234567/"
-      },
-      {
-        "title": "Kathmandu Chitwan Lumbini Via Pokhara Tour",
-        "description": "A comprehensive tour covering Kathmandu, Chitwan, Lumbini, and Pokhara, offering cultural and natural insights.",
-        "duration": "14 Days",
         "altitude": "1400m",
-        "image_url": "https://www.tripadvisor.com/AttractionProductReview-g293890-d20825151-7_Days_Kathmandu_Pokhara_Chitwan_and_Lumbini_Tour-Kathmandu_Kathmandu_Valley_Bagma.html"
+        "price": "From $80",
+        "image_url": "https://www.shutterstock.com/search/kathmandu-buddhist-tour"
       },
       {
-        "title": "Kathmandu Chitwan Pokhara Package Tour",
-        "description": "Explore the highlights of Kathmandu, Chitwan, and Pokhara in this well-rounded package tour.",
-        "duration": "9 Days",
-        "altitude": "820m",
-        "price": "From $1199",
-        "image_url": "https://www.culturalsafaritours.com/tourpackage/kathmandu-chitwan-pokhara-tour-package"
+        "title": "Kathmandu Nagarkot Pokhara Tour 06 days",
+        "description": "A whirlwind tour covering the cultural heart of Kathmandu, Himalayan views from Nagarkot, and the lakeside beauty of Pokhara.",
+        "duration": "6 Days",
+        "altitude": "2195m (Nagarkot)",
+        "price": "From $750",
+        "image_url": "https://www.shutterstock.com/search/kathmandu-nagarkot-pokhara-tour"
+      },
+      {
+        "title": "Kathmandu City Tour",
+        "description": "Discover the ancient temples, palaces, and vibrant streets of Kathmandu city, a UNESCO World Heritage hub.",
+        "duration": "1 Day",
+        "altitude": "1400m",
+        "price": "From $70",
+        "image_url": "https://www.shutterstock.com/search/kathmandu-city-tour"
+      },
+      {
+        "title": "Nepal Culture Tour",
+        "description": "Immerse yourself in the rich and diverse cultures of Nepal, visiting historical sites and interacting with local communities.",
+        "duration": "8-10 Days",
+        "altitude": "1400m",
+        "price": "From $1000",
+        "image_url": "https://www.shutterstock.com/search/nepal-culture-tour"
       },
       {
         "title": "Kathmandu Valley Tour",
-        "description": "Embark on a one-day tour of Kathmandu Valley, visiting UNESCO World Heritage sites and experiencing local culture.",
-        "duration": "1 Day",
+        "description": "Embark on a tour of Kathmandu Valley's UNESCO World Heritage sites, including Pashupatinath, Boudhanath, Swayambhunath, and Patan Durbar Square.",
+        "duration": "1-2 Days",
         "altitude": "1400m",
         "price": "From $70",
         "image_url": "https://www.gettyimages.com/photos/kathmandu-valley"
       },
       {
-        "title": "Mountain Flight in Nepal",
-        "description": "Take a scenic mountain flight to witness the grandeur of the Himalayas, including Mount Everest.",
-        "duration": "1 Day",
-        "altitude": "5000m",
-        "image_url": "https://www.shutterstock.com/search/mountain-flight-nepal"
-      },
-      {
-        "title": "Paragliding in Nepal",
-        "description": "Soar above the landscapes of Nepal with our paragliding adventures, offering stunning aerial views.",
-        "duration": "1 Day",
-        "altitude": "2000m",
-        "image_url": "https://www.gettyimages.com/photos/paragliding-in-nepal"
+        "title": "Everest View Tour",
+        "description": "Get magnificent views of Mount Everest and surrounding peaks without extensive trekking, typically involving a short hike or flight.",
+        "duration": "3-5 Days",
+        "altitude": "3880m (Hotel Everest View)",
+        "price": "From $600",
+        "image_url": "https://www.shutterstock.com/search/everest-view-tour"
       }
     ]
   },
@@ -315,12 +424,103 @@
     ]
   },
   {
-    "chitwan_jungle_safari": {
-      "title": "Chitwan Jungle Safari",
-      "description": "Explore Nepal’s first national park, Chitwan National Park, home to endangered species like the one-horned rhinoceros and Bengal tiger. Enjoy jeep safaris, canoe rides, bird watching, and Tharu cultural performances.",
-      "duration": "2-3 Days",
-      "image_url": "https://www.shutterstock.com/search/chitwan-jungle-safari"
-    }
+    "helicopter_tours": [
+      {
+        "title": "Langtang Helicopter Tour",
+        "description": "Enjoy a scenic helicopter flight to the beautiful Langtang Valley, offering close-up views of Langtang Lirung and surrounding peaks.",
+        "duration": "Approx 1.5 - 2 Hours (including ground time)",
+        "altitude": "Up to 4000m (Kyanjin Gompa area)",
+        "price": "From $1500 per person (group sharing)",
+        "image_url": "https://www.shutterstock.com/search/langtang-helicopter-tour"
+      },
+      {
+        "title": "Annapurna Helicopter Tour",
+        "description": "A breathtaking helicopter journey to Annapurna Base Camp, flying amidst towering peaks like Annapurna I, Machhapuchhre, and Hiunchuli.",
+        "duration": "Approx 2 - 2.5 Hours (including ground time)",
+        "altitude": "4130m (Annapurna Base Camp)",
+        "price": "From $1800 per person (group sharing)",
+        "image_url": "https://www.shutterstock.com/search/annapurna-helicopter-tour"
+      },
+      {
+        "title": "Everest Base Camp 5364m on Heli flight",
+        "description": "An iconic helicopter flight to Everest Base Camp (5364m) with a landing at Kala Patthar (5545m) for the best views of Mount Everest.",
+        "duration": "Approx 3 - 4 Hours (including ground time & fuel stops)",
+        "altitude": "5545m (Kala Patthar landing)",
+        "price": "From $1200 per person (group sharing)",
+        "image_url": "https://www.shutterstock.com/search/everest-base-camp-helicopter"
+      },
+      {
+        "title": "Explore Nepal, Annapurna Base Camp Tour in 3 Days",
+        "description": "A short and luxurious tour combining cultural exploration with a helicopter flight to Annapurna Base Camp over 3 days.",
+        "duration": "3 Days",
+        "altitude": "4130m (Annapurna Base Camp)",
+        "price": "From $2500 (package)",
+        "image_url": "https://www.shutterstock.com/search/annapurna-3-day-helicopter-tour"
+      },
+      {
+        "title": "GorakShep to Lukla Helicopter Tour",
+        "description": "A convenient helicopter shuttle from Gorak Shep (near Everest Base Camp) back to Lukla, saving days of trekking.",
+        "duration": "Approx 20-25 Minutes flight",
+        "altitude": "From 5164m (Gorak Shep) to 2860m (Lukla)",
+        "price": "From $600 per person (group sharing)",
+        "image_url": "https://www.shutterstock.com/search/gorakshep-lukla-helicopter"
+      },
+      {
+        "title": "Kathmandu to Lukla Helicopter Tour",
+        "description": "Fly directly from Kathmandu to Lukla by helicopter, bypassing the regular flight uncertainties and enjoying scenic views.",
+        "duration": "Approx 45-50 Minutes flight",
+        "altitude": "From 1400m (Kathmandu) to 2860m (Lukla)",
+        "price": "From $700 per person (group sharing)",
+        "image_url": "https://www.shutterstock.com/search/kathmandu-lukla-helicopter"
+      },
+      {
+        "title": "Nepal Himalaya Mountain Flight",
+        "description": "Enjoy a breathtaking flightseeing experience over the Himalayan range. Witness Mount Everest and other 8000m peaks without the need for trekking.",
+        "duration": "1 Hour (fixed-wing aircraft)",
+        "altitude": "Cruising altitude approx 6000-7000m",
+        "price": "From $250 per person",
+        "image_url": "https://www.shutterstock.com/search/nepal-mountain-flight"
+      }
+    ]
+  },
+  {
+    "jungle_safari_and_hunting": [
+      {
+        "title": "Chitwan Jungle Safari Tour",
+        "description": "Explore Nepal’s first national park, Chitwan National Park, home to endangered species like the one-horned rhinoceros and Bengal tiger. Enjoy jeep safaris, canoe rides, bird watching, and Tharu cultural performances.",
+        "duration": "2-3 Days",
+        "price": "From $200",
+        "image_url": "https://www.shutterstock.com/search/chitwan-jungle-safari"
+      },
+      {
+        "title": "Blue Sheep Hunting Safari and Adventure",
+        "description": "Embark on a challenging hunting safari for Blue Sheep (Bharal) in the high-altitude regions of Nepal, a unique and regulated adventure.",
+        "duration": "15-20 Days",
+        "price": "Contact for details (permit-based)",
+        "image_url": "https://www.shutterstock.com/search/blue-sheep-hunting-nepal"
+      },
+      {
+        "title": "Hunting Himalaya Tahr",
+        "description": "A thrilling hunting expedition for the Himalayan Tahr in designated hunting reserves, offering a rugged mountain experience.",
+        "duration": "12-18 Days",
+        "price": "Contact for details (permit-based)",
+        "image_url": "https://www.shutterstock.com/search/himalayan-tahr-hunting"
+      },
+      {
+        "title": "Combo Hunting Adventure Safari",
+        "description": "A comprehensive hunting package that may include opportunities for multiple species like Blue Sheep and Himalayan Tahr, subject to permits and seasons.",
+        "duration": "20-25 Days",
+        "price": "Contact for details (permit-based)",
+        "image_url": "https://www.shutterstock.com/search/nepal-hunting-safari"
+      },
+      {
+        "title": "Bardiya Tour Package",
+        "description": "Discover the wilderness of Bardiya National Park, known for its tiger population, wild elephants, and diverse wildlife. Includes jeep safari, jungle walks, and cultural experiences.",
+        "duration": "3-4 Days",
+        "price": "From $300",
+        "image_url": "https://www.shutterstock.com/search/bardiya-national-park-safari"
+      }
+    ]
   },
   {
     "nepal_paragliding": {
@@ -336,14 +536,6 @@
       "description": "Leap off Nepal's iconic bungee jump bridges above the roaring Bhote Koshi River. This adrenaline-pumping activity is a favorite for thrill-seekers visiting Nepal.",
       "duration": "1 Day",
       "image_url": "https://www.shutterstock.com/search/bungee-jump-nepal"
-    }
-  },
-  {
-    "mountain_flight_in_nepal": {
-      "title": "Mountain Flight in Nepal",
-      "description": "Enjoy a breathtaking flightseeing experience over the Himalayan range. Witness Mount Everest and other 8000m peaks without the need for trekking.",
-      "duration": "1 Hour",
-      "image_url": "https://www.shutterstock.com/search/mountain-flight-nepal"
     }
   }
 ]
