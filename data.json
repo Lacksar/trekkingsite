@@ -4,17 +4,43 @@
       {
         "title": "Annapurna Region Trekking",
         "description": "Explore the diverse landscapes of the Annapurna region, offering panoramic mountain views and rich cultural experiences.",
-        "image_url": "https://www.halfwayanywhere.com/wp-content/uploads/2016/11/Annapurna-Circuit-Mountain.jpg"
+        "image_url": "https://www.halfwayanywhere.com/wp-content/uploads/2016/11/Annapurna-Circuit-Mountain.jpg",
+        "available_treks": [
+          "Annapurna Base Camp Trek",
+          "Mardi Himal Trekking",
+          "Annapurna Circuit Trek",
+          "Ghorepani Poonhill Trek",
+          "Annapurna Panorama Trek",
+          "Annapurna Base Camp Trek From Pokhara"
+        ]
       },
       {
         "title": "Langtang Region Trekking",
         "description": "Discover the serene beauty of the Langtang Valley, nestled close to Kathmandu, featuring lush forests and traditional villages.",
-        "image_url": "https://media.gettyimages.com/photos/rear-view-of-trekker-sitting-on-the-top-of-tsergo-ri-4990m-the-high-picture-id1317322631"
+        "image_url": "https://media.gettyimages.com/photos/rear-view-of-trekker-sitting-on-the-top-of-tsergo-ri-4990m-the-high-picture-id1317322631",
+        "available_treks": [
+          "Langtang Valley Trek",
+          "Shivapuri Nagarkot Trek",
+          "Tamang Heritage & Langtang Valley Trek",
+          "Gosaikunda Helambu Trek",
+          "Langtang Gosaikunda Circuit Trekking",
+          "Langtang Valley and Gosaikunda Trek"
+        ]
       },
       {
         "title": "Everest Region Trekking",
         "description": "Embark on a journey to the base of the world's highest peak, experiencing Sherpa culture and breathtaking Himalayan vistas.",
-        "image_url": "https://www.halfwayanywhere.com/wp-content/uploads/2016/10/Everest-Base-Camp-Trek-Everest-Peak.jpg"
+        "image_url": "https://www.halfwayanywhere.com/wp-content/uploads/2016/10/Everest-Base-Camp-Trek-Everest-Peak.jpg",
+        "available_treks": [
+          "Luxury Everest Base Camp Trek",
+          "Everest Base Camp Trek",
+          "Mount Everest Base Camp Trek - 12 days",
+          "Everest Three High Passes Trekking",
+          "Gokyo Valley and Everest Base Camp Trek",
+          "Gokyo Renjo La Pass Trekking",
+          "EBC Chola Gokyo Lake Trekking",
+          "Everest Panorama Trek"
+        ]
       },
       {
         "title": "Wilderness Region Trekking",
@@ -28,7 +54,6 @@
       }
     ]
   },
-
   {
     "package_tours": [
       {
@@ -98,7 +123,6 @@
       }
     ]
   },
-
   {
     "peak_climbing": [
       {
@@ -157,7 +181,6 @@
       }
     ]
   },
-
   {
     "nepal_expeditions": [
       {
@@ -190,7 +213,6 @@
       }
     ]
   },
-
   {
     "nepal_rafting": [
       {

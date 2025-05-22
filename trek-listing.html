@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trek Listings - Himalayan Peaks</title>
+    <!-- Will be updated by JS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-bg-dynamic {
+        background-image: url("https://images.pexels.com/photos/1563045/pexels-photo-1563045.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1"); /* Default hero */
+        background-size: cover;
+        background-position: center;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in-section {
+        opacity: 0;
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800 antialiased">
+    <header
+      id="page-hero"
+      class="relative h-[35vh] md:h-[45vh] flex flex-col hero-bg-dynamic"
+    >
+      <nav class="absolute top-0 left-0 right-0 z-20 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+          <a
+            href="index.html"
+            class="text-white text-3xl font-bold tracking-tight"
+          >
+            Himalayan<span class="text-yellow-400">Peaks</span>
+          </a>
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html#home" class="text-white hover:text-yellow-400"
+              >Home</a
+            >
+            <a
+              href="nepal-categories.html"
+              class="text-white hover:text-yellow-400"
+              >Categories</a
+            >
+            <a
+              href="index.html#reviews"
+              class="text-white hover:text-yellow-400"
+              >Reviews</a
+            >
+            <a
+              href="index.html#contact"
+              class="text-white hover:text-yellow-400"
+              >Contact</a
+            >
+          </div>
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute top-16 left-0 right-0 bg-black bg-opacity-90 z-10 p-4"
+      >
+        <a
+          href="index.html#home"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Home</a
+        >
+        <a
+          href="nepal-categories.html"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Categories</a
+        >
+        <a
+          href="index.html#reviews"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Reviews</a
+        >
+        <a
+          href="index.html#contact"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Contact</a
+        >
+      </div>
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div
+        class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4"
+      >
+        <h1
+          id="page-main-title"
+          class="text-3xl md:text-5xl text-white font-extrabold mb-3 drop-shadow-lg fade-in-section"
+        >
+          Available Treks
+        </h1>
+        <p
+          id="page-subtitle"
+          class="text-md md:text-lg text-yellow-100 max-w-xl drop-shadow-md fade-in-section"
+        ></p>
+      </div>
+    </header>
+
+    <main class="py-10 md:py-12">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="treks-breadcrumb" class="mb-6 text-sm text-gray-600">
+          <a href="index.html" class="hover:text-yellow-600">Home</a> »
+          <a href="nepal-categories.html" class="hover:text-yellow-600"
+            >Nepal Categories</a
+          >
+          »
+          <a
+            id="breadcrumb-parent-category-link"
+            href="#"
+            class="hover:text-yellow-600"
+          >
+            <span id="breadcrumb-parent-category">Parent Category</span>
+          </a>
+          »
+          <span
+            id="breadcrumb-current-region"
+            class="font-semibold text-gray-800"
+            >Current Region</span
+          >
+        </div>
+
+        <div id="treks-grid-container">
+          <p
+            id="loading-treks-message"
+            class="text-center text-gray-600 text-lg"
+          >
+            Fetching treks...
+          </p>
+          <!-- Grid for trek cards -->
+          <div id="treks-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Individual trek cards will be injected here -->
+          </div>
+        </div>
+        <div
+          id="no-treks-message"
+          class="hidden text-center text-gray-600 text-xl py-10"
+        >
+          <i class="fas fa-hiking fa-3x mb-4 text-gray-400"></i>
+          <p>
+            No specific treks found for this region, or the region is invalid.
+          </p>
+          <a
+            id="back-to-category-link"
+            href="nepal-categories.html"
+            class="mt-4 inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-2 px-6 rounded-lg"
+          >
+            Back to Categories
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-16">
+      <!-- Re-use your existing footer HTML here -->
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div>
+            <h4 class="text-xl font-semibold text-white mb-4">
+              Himalayan<span class="text-yellow-400">Peaks</span>
+            </h4>
+            <p class="text-sm mb-4 leading-relaxed">
+              Your trusted partner for extraordinary adventures.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
+                ><i class="fab fa-facebook-f fa-lg"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-4">Explore</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="index.html#home" class="hover:text-yellow-400">Home</a>
+              </li>
+              <li>
+                <a href="nepal-categories.html" class="hover:text-yellow-400"
+                  >All Categories</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+              <li><a href="#" class="hover:text-yellow-400">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#" class="hover:text-yellow-400">Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-yellow-400">Privacy Policy</a>
+              </li>
+              <li><a href="#" class="hover:text-yellow-400">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+            <address class="text-sm not-italic space-y-2">
+              <p>
+                <i class="fas fa-map-marker-alt mr-2 text-yellow-400"></i
+                >Kathmandu, Nepal
+              </p>
+              <p>
+                <i class="fas fa-phone mr-2 text-yellow-400"></i>+977 12345678
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-2 text-yellow-400"></i
+                >info@himalayanpeaks.com
+              </p>
+            </address>
+          </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+          <p class="text-sm">
+            © <span id="currentYear"></span> HimalayanPeaks. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener("click", () =>
+          mobileMenu.classList.toggle("hidden")
+        );
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () =>
+            mobileMenu.classList.add("hidden")
+          );
+        });
+      }
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      // Hero images for specific regions (can be expanded from your JSON data if region objects have image_url)
+      const regionSpecificHeroImages = {
+        // Example: "Everest Region Trekking": "url_to_everest_hero.jpg",
+        // This can be populated from the data.json if needed
+      };
+      const defaultTrekHero =
+        "https://images.pexels.com/photos/1563045/pexels-photo-1563045.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1";
+
+      function formatCategoryTitleForDisplay(key) {
+        if (!key) return "Category";
+        return key
+          .replace(/_/g, " ")
+          .replace(/\b\w/g, (char) => char.toUpperCase());
+      }
+
+      // Creates a card for an individual trek name
+      function createIndividualTrekCard(trekName, regionImageUrl) {
+        // Ideally, each trek would have its own details page.
+        // For now, the link is a placeholder.
+        const trekDetailLink = `#trek-detail-${trekName
+          .toLowerCase()
+          .replace(/\s+/g, "-")}`;
+        const placeholderTrekImage =
+          "https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"; // Generic mountain icon
+
+        return `
+                <a href="${trekDetailLink}" class="block  rounded-lg   transition-all duration-300 ease-out overflow-hidden group transform hover:-translate-y-1">
+                    <div class="h-96 mr-30 ml-30 bg-cover bg-center" style="background-image: url('${
+                      regionImageUrl || placeholderTrekImage
+                    }')">
+                        <!-- Could add an overlay here if needed -->
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-yellow-600 mb-1">${trekName}</h3>
+                        <p class="text-2xl text-green-400">$400 </p>
+                    </div>
+                </a>
+            `;
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoryKeyParam = urlParams.get("category"); // e.g., "trekking_trips"
+        const regionTitleParam = urlParams.get("regionTitle"); // e.g., "Everest Region Trekking"
+
+        const pageHero = document.getElementById("page-hero");
+        const pageMainTitle = document.getElementById("page-main-title");
+        const pageSubtitle = document.getElementById("page-subtitle");
+
+        const breadcrumbParentCategory = document.getElementById(
+          "breadcrumb-parent-category"
+        );
+        const breadcrumbParentCategoryLink = document.getElementById(
+          "breadcrumb-parent-category-link"
+        );
+        const breadcrumbCurrentRegion = document.getElementById(
+          "breadcrumb-current-region"
+        );
+        const backToCategoryLink = document.getElementById(
+          "back-to-category-link"
+        );
+
+        const treksGrid = document.getElementById("treks-grid");
+        const loadingMessage = document.getElementById("loading-treks-message");
+        const noTreksMessage = document.getElementById("no-treks-message");
+        const treksGridContainer = document.getElementById(
+          "treks-grid-container"
+        );
+
+        if (!categoryKeyParam || !regionTitleParam) {
+          pageMainTitle.textContent = "Information Missing";
+          pageSubtitle.textContent =
+            "Cannot display treks without category or region.";
+          if (loadingMessage) loadingMessage.style.display = "none";
+          if (treksGridContainer) treksGridContainer.style.display = "none";
+          if (noTreksMessage) {
+            noTreksMessage.style.display = "block";
+            noTreksMessage.querySelector("p").textContent =
+              "Category or region not specified. Please go back.";
+          }
+          breadcrumbParentCategory.textContent = "Unknown";
+          breadcrumbCurrentRegion.textContent = "Unknown";
+          return;
+        }
+
+        const displayRegionTitle = decodeURIComponent(regionTitleParam);
+        document.title = `${displayRegionTitle} - Himalayan Peaks`;
+        pageMainTitle.textContent = displayRegionTitle;
+        pageSubtitle.textContent = `Browse available treks in the ${displayRegionTitle}.`;
+
+        const parentCategoryFormatted =
+          formatCategoryTitleForDisplay(categoryKeyParam);
+        breadcrumbParentCategory.textContent = parentCategoryFormatted;
+        const parentCategoryLink = `nepal-activities-by-category.html?category=${encodeURIComponent(
+          categoryKeyParam
+        )}`;
+        breadcrumbParentCategoryLink.href = parentCategoryLink;
+        breadcrumbCurrentRegion.textContent = displayRegionTitle;
+        backToCategoryLink.href = parentCategoryLink;
+
+        fetch("data.json")
+          .then((response) => {
+            if (!response.ok)
+              throw new Error(`HTTP error! status: ${response.status}`);
+            return response.json();
+          })
+          .then((data) => {
+            if (loadingMessage) loadingMessage.style.display = "none";
+
+            const categoryObject = data.find((obj) =>
+              obj.hasOwnProperty(categoryKeyParam)
+            );
+
+            if (categoryObject && categoryObject[categoryKeyParam]) {
+              const regionObject = categoryObject[categoryKeyParam].find(
+                (item) => item.title === displayRegionTitle
+              );
+
+              if (regionObject) {
+                // Set hero image from the region object if available, else default
+                const heroForRegion =
+                  regionObject.image_url ||
+                  regionSpecificHeroImages[displayRegionTitle] ||
+                  defaultTrekHero;
+                if (pageHero) {
+                  pageHero.style.backgroundImage = `url('${heroForRegion}')`;
+                }
+
+                if (
+                  regionObject.available_treks &&
+                  regionObject.available_treks.length > 0
+                ) {
+                  let treksHtml = "";
+                  regionObject.available_treks.forEach((trekName) => {
+                    // Pass regionObject.image_url to be used as a background for individual trek cards
+                    treksHtml += createIndividualTrekCard(
+                      trekName,
+                      "images/trekking.jpeg" || regionObject.image_url
+                    );
+                  });
+                  treksGrid.innerHTML = treksHtml;
+                  if (noTreksMessage) noTreksMessage.style.display = "none";
+                  if (treksGridContainer)
+                    treksGridContainer.style.display = "block";
+
+                  const animatedCards = treksGrid.querySelectorAll(".block");
+                  animatedCards.forEach((card, index) => {
+                    card.style.opacity = "0";
+                    card.style.transform = "translateY(20px)";
+                    card.style.transition = `opacity 0.4s ease-out ${
+                      index * 0.06
+                    }s, transform 0.4s ease-out ${index * 0.06}s`;
+                    setTimeout(() => {
+                      card.style.opacity = "1";
+                      card.style.transform = "translateY(0)";
+                    }, index * 60 + 50); // Staggered animation
+                  });
+                } else {
+                  if (treksGridContainer)
+                    treksGridContainer.style.display = "none";
+                  if (noTreksMessage) {
+                    noTreksMessage.style.display = "block";
+                    noTreksMessage.querySelector(
+                      "p"
+                    ).textContent = `No specific treks are listed for ${displayRegionTitle} at the moment.`;
+                  }
+                }
+              } else {
+                if (treksGridContainer)
+                  treksGridContainer.style.display = "none";
+                if (noTreksMessage) {
+                  noTreksMessage.style.display = "block";
+                  noTreksMessage.querySelector(
+                    "p"
+                  ).textContent = `Could not find details for the region: ${displayRegionTitle}.`;
+                }
+              }
+            } else {
+              if (treksGridContainer) treksGridContainer.style.display = "none";
+              if (noTreksMessage) {
+                noTreksMessage.style.display = "block";
+                noTreksMessage.querySelector(
+                  "p"
+                ).textContent = `Could not find the category: ${parentCategoryFormatted}.`;
+              }
+            }
+          })
+          .catch((error) => {
+            console.error(
+              "Error fetching or processing data for treks:",
+              error
+            );
+            if (loadingMessage) loadingMessage.style.display = "none";
+            if (treksGridContainer) treksGridContainer.style.display = "none";
+            if (noTreksMessage) {
+              noTreksMessage.style.display = "block";
+              noTreksMessage.querySelector(
+                "p"
+              ).innerHTML = `Could not load treks. Please try again. <br><small>${error.message}</small>`;
+            }
+          });
+      });
+    </script>
+  </body>
+</html>

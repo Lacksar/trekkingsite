@@ -31,7 +31,25 @@
         opacity: 0;
         animation: fadeIn 0.8s ease-out forwards;
       }
-      /* No specific .activity-card img hover needed if using group-hover on image */
+      .activity-card {
+        /* Base style for cards */
+        display: flex;
+        flex-direction: column;
+      }
+      .activity-card .p-5 {
+        /* Ensure text content area can grow */
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .activity-card .description-area {
+        /* For description paragraph */
+        flex-grow: 1;
+      }
+      .activity-card .cta-area {
+        /* For buttons or extra info */
+        margin-top: auto; /* Pushes to the bottom */
+      }
     </style>
   </head>
   <body class="bg-gray-100 text-gray-800 antialiased">
@@ -274,15 +292,23 @@
       // Hero images for categories
       const categoryHeroImages = {
         trekking_trips:
-          "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1",
+          "https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1", // Trekking specific
         package_tours:
-          "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1",
+          "https://images.pexels.com/photos/3889742/pexels-photo-3889742.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1", // Tours specific
         peak_climbing:
-          "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1",
+          "https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1", // Climbing specific
         nepal_expeditions:
-          "https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1",
+          "https://images.pexels.com/photos/112285/pexels-photo-112285.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1", // Expeditions specific
         nepal_rafting:
-          "https://images.pexels.com/photos/1655650/pexels-photo-1655650.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1",
+          "https://images.pexels.com/photos/1655650/pexels-photo-1655650.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1", // Rafting specific
+        chitwan_jungle_safari:
+          "https://images.pexels.com/photos/130879/pexels-photo-130879.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1", // Safari specific
+        nepal_paragliding:
+          "https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1", // Paragliding specific
+        bunzy_jump_in_nepal:
+          "https://images.pexels.com/photos/2257775/pexels-photo-2257775.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1", // Bungee specific
+        mountain_flight_in_nepal:
+          "https://images.pexels.com/photos/3732653/pexels-photo-3732653.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1", // Mountain flight specific
         default:
           "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1",
       };
@@ -295,60 +321,101 @@
       }
 
       // Updated createActivityCard function
-      function createActivityCard(item) {
+      function createActivityCard(item, currentCategoryKey) {
+        // currentCategoryKey is the main category key like "trekking_trips"
         const placeholderImageOnError =
           "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
-        // Try to use item.image_url, fallback to a generic category image if not available or invalid
-        let imageUrl =
-          item.image_url &&
-          (item.image_url.includes(".jpg") ||
-            item.image_url.includes(".jpeg") ||
-            item.image_url.includes(".png") ||
-            item.image_url.includes("images.pexels.com") ||
-            item.image_url.includes("media.gettyimages.com") ||
-            item.image_url.includes("pixabay.com") ||
-            item.image_url.includes("mountainrocktreks.com"))
-            ? item.image_url
-            : placeholderImageOnError; // Fallback to error placeholder first
 
-        // If item.image_url is bad, try to use the category's hero image as a last resort
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentCategoryKey = urlParams.get("category");
+        let imageUrl =
+          item.image_url ||
+          (currentCategoryKey && categoryHeroImages[currentCategoryKey]) ||
+          placeholderImageOnError;
+        // Validate image URL format roughly
         if (
-          imageUrl === placeholderImageOnError &&
-          currentCategoryKey &&
-          categoryHeroImages[currentCategoryKey]
+          imageUrl !== placeholderImageOnError &&
+          !(
+            imageUrl.includes(".jpg") ||
+            imageUrl.includes(".jpeg") ||
+            imageUrl.includes(".png") ||
+            imageUrl.includes("images.pexels.com") ||
+            imageUrl.includes("media.gettyimages.com") ||
+            imageUrl.includes("pixabay.com") ||
+            imageUrl.includes("mountainrocktreks.com") ||
+            imageUrl.includes("halfwayanywhere.com") ||
+            imageUrl.includes("istockphoto.com") ||
+            imageUrl.includes("shutterstock.com") ||
+            imageUrl.includes("tripadvisor.com") ||
+            imageUrl.includes("instagram.com") ||
+            imageUrl.includes("gettyimages.com") ||
+            imageUrl.includes("culturalsafaritours.com")
+          )
         ) {
-          imageUrl = categoryHeroImages[currentCategoryKey];
+          imageUrl = placeholderImageOnError; // Fallback if format seems off
         }
 
-        // The link for an activity card should ideally go to a specific detail page for that activity.
-        // For now, it's a placeholder '#'.
-        const activityDetailLink = `#activity-${
-          item.title ? item.title.toLowerCase().replace(/\s+/g, "-") : "details"
-        }`;
+        let activityLink;
+        let callToActionContent = "";
+        const title = item.title || "N/A";
+
+        if (item.available_treks && item.available_treks.length > 0) {
+          // This item is a region with sub-treks (like "Everest Region Trekking")
+          // Link to trek-listing.html, passing the main category key and this specific region's title.
+          activityLink = `trek-listing.html?category=${encodeURIComponent(
+            currentCategoryKey
+          )}&regionTitle=${encodeURIComponent(title)}`;
+        } else {
+          // This is a direct activity (like "Kathmandu Chitwan Tour" or a single-item category)
+          // The link can go to a specific detail page for this item (placeholder for now).
+          activityLink = `#activity-${title
+            .toLowerCase()
+            .replace(/\s+/g, "-")}`;
+
+          // Display details like duration, altitude, price for these non-expandable items
+          let detailsHtml = "";
+          if (item.duration)
+            detailsHtml += `<div><i class="fas fa-clock mr-1 text-yellow-500"></i> ${item.duration}</div>`;
+          if (item.altitude)
+            detailsHtml += `<div><i class="fas fa-mountain mr-1 text-yellow-500"></i> Max Alt: ${item.altitude}</div>`;
+          if (item.price)
+            detailsHtml += `<div><i class="fas fa-dollar-sign mr-1 text-yellow-500"></i> Price: ${item.price}</div>`;
+
+          if (detailsHtml) {
+            callToActionContent = `<div class="mt-3 pt-3 border-t border-gray-200 text-xs text-gray-500 space-y-1 text-left px-2">${detailsHtml}</div>`;
+          } else {
+            callToActionContent = `<span class="inline-block bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-md transition-colors">View Details <i class="fas fa-info-circle ml-1"></i></span>`;
+          }
+        }
+
+        const description = item.description
+          ? `<p class="text-sm text-gray-600 mb-3 description-area">${item.description.substring(
+              0,
+              100
+            )}${item.description.length > 100 ? "..." : ""}</p>`
+          : '<div class="description-area"></div>';
 
         return `
-                <a href="${activityDetailLink}" class="activity-card block   overflow-hidden group transform transition-all duration-300 ease-out mt-5 hover:-translate-y-1.5">
-                    <div class="relative h-80 md:h-80 overflow-hidden"> 
-                        <img src="${imageUrl}" alt="${
-          item.title || "Nepal Activity"
-        }" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.onerror=null;this.src='${placeholderImageOnError}';">
-                    </div>
+                <div class="activity-card bg-white rounded-xl shadow-lg overflow-hidden group transform transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1.5">
+                    <a href="${activityLink}" class="block">
+                        <div class="relative h-60 md:h-64 overflow-hidden">
+                            <img src="${imageUrl}" alt="${title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.onerror=null;this.src='${placeholderImageOnError}';">
+                        </div>
+                    </a>
                     <div class="p-5 text-center">
-                        <h3 class="text-2xl font-semibold text-black group-hover:text-yellow-600 transition-colors mb-2">${
-                          item.title || "N/A"
-                        }</h3>
-                       
-                       
+                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-yellow-600 transition-colors mb-2">
+                            <a href="${activityLink}" class="hover:underline">${title}</a>
+                        </h3>
+                        ${description}
+                        <div class="cta-area">
+                           ${callToActionContent}
+                        </div>
                     </div>
-                </a>
+                </div>
             `;
       }
 
       document.addEventListener("DOMContentLoaded", () => {
         const urlParams = new URLSearchParams(window.location.search);
-        const category = urlParams.get("category");
+        const categoryKey = urlParams.get("category"); // This is the key from data.json (e.g., "trekking_trips")
 
         const pageHero = document.getElementById("page-hero");
         const pageMainTitle = document.getElementById("page-main-title");
@@ -368,23 +435,23 @@
           "activities-grid-container"
         );
 
-        const formattedCategoryTitle = formatCategoryTitle(category);
+        const formattedCategoryTitle = formatCategoryTitle(categoryKey);
         document.title = `${formattedCategoryTitle} - Himalayan Peaks`;
         pageMainTitle.textContent = formattedCategoryTitle;
         pageSubtitle.textContent = `Discover amazing ${formattedCategoryTitle.toLowerCase()} options in the heart of the Himalayas.`;
         breadcrumbCurrentCategory.textContent = formattedCategoryTitle;
 
         const heroImageUrl =
-          categoryHeroImages[category] || categoryHeroImages["default"];
+          categoryHeroImages[categoryKey] || categoryHeroImages["default"];
         if (pageHero) {
           pageHero.style.backgroundImage = `url('${heroImageUrl}')`;
         }
 
-        if (!category) {
+        if (!categoryKey) {
           pageMainTitle.textContent = "Category Not Specified";
-          if (loadingMessage) loadingMessage.remove();
+          if (loadingMessage) loadingMessage.style.display = "none";
           if (activitiesGridContainer)
-            activitiesGridContainer.classList.add("hidden");
+            activitiesGridContainer.style.display = "none";
           if (noActivitiesMessage) {
             noActivitiesMessage.classList.remove("hidden");
             noActivitiesMessage.querySelector("p").textContent =
@@ -400,21 +467,30 @@
             return response.json();
           })
           .then((data) => {
-            if (loadingMessage) loadingMessage.remove();
+            if (loadingMessage) loadingMessage.style.display = "none";
 
-            const categoryObject = data.find((obj) =>
-              obj.hasOwnProperty(category)
+            const categoryData = data.find((obj) =>
+              obj.hasOwnProperty(categoryKey)
             );
+            let itemsToDisplay = [];
 
-            if (
-              categoryObject &&
-              categoryObject[category] &&
-              categoryObject[category].length > 0
-            ) {
-              const items = categoryObject[category];
+            if (categoryData) {
+              if (Array.isArray(categoryData[categoryKey])) {
+                // e.g. trekking_trips, package_tours are arrays
+                itemsToDisplay = categoryData[categoryKey];
+              } else if (
+                typeof categoryData[categoryKey] === "object" &&
+                categoryData[categoryKey] !== null
+              ) {
+                // Handles single object categories like chitwan_jungle_safari
+                itemsToDisplay = [categoryData[categoryKey]]; // Wrap in an array to use forEach
+              }
+            }
+
+            if (itemsToDisplay.length > 0) {
               let activitiesHtml = "";
-              items.forEach((item) => {
-                activitiesHtml += createActivityCard(item);
+              itemsToDisplay.forEach((item) => {
+                activitiesHtml += createActivityCard(item, categoryKey); // Pass categoryKey here
               });
               activitiesGrid.innerHTML = activitiesHtml;
               if (noActivitiesMessage)
@@ -446,16 +522,16 @@
               });
             } else {
               if (activitiesGridContainer)
-                activitiesGridContainer.classList.add("hidden");
+                activitiesGridContainer.style.display = "none";
               if (noActivitiesMessage)
                 noActivitiesMessage.classList.remove("hidden");
             }
           })
           .catch((error) => {
             console.error("Error fetching or processing data:", error);
-            if (loadingMessage) loadingMessage.remove();
+            if (loadingMessage) loadingMessage.style.display = "none";
             if (activitiesGridContainer)
-              activitiesGridContainer.classList.add("hidden");
+              activitiesGridContainer.style.display = "none";
             if (noActivitiesMessage) {
               noActivitiesMessage.classList.remove("hidden");
               noActivitiesMessage.querySelector(
