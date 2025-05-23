@@ -61,127 +61,181 @@
   </head>
   <body class="bg-gray-100 text-gray-800 antialiased">
     <!-- 1. Header Section -->
-    <header
-      id="home"
-      class="relative min-h-screen flex flex-col hero-bg bg-cover bg-center"
-    >
-      <!-- Transparent Navigation Bar -->
-      <nav class="absolute top-0 left-0 right-0 z-20 p-6">
-        <div class="container mx-auto flex justify-between items-center">
-          <a href="#home" class="text-white text-3xl font-bold tracking-tight">
-            Himalayan<span class="text-yellow-400">Peaks</span>
+   <!-- 1. Header Section -->
+<header id="home" class="relative min-h-screen flex flex-col overflow-hidden">
+  <!-- Video Background -->
+  <div class="absolute inset-0 w-full h-full z-0">
+      <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="w-full h-full object-cover"
+          poster="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1"
+          id="hero-video"
+      >
+          <source src="/videos/trekking.mp4" type="video/mp4" />
+          <!-- Add more <source> tags for other video formats if needed (e.g., webm, ogg) -->
+          Your browser does not support the video tag.
+      </video>
+  </div>
+
+  <!-- Transparent Navigation Bar (remains the same) -->
+  <nav class="absolute top-0 left-0 right-0 z-20 p-6">
+    <div class="w-full sticky top-0 z-50" id="main-navigation-container">
+
+      <!-- Top Announcement Bar -->
+      <div class="bg-blue-700 text-center py-2 px-4">
+        <p class="text-sm text-yellow-300 font-medium">
+          Nepal Trek Booking Open For 2025/26
+        </p>
+      </div>
+    
+      <!-- Middle Bar: Logo & Quick Contacts -->
+      <div class="bg-white shadow-md py-3 px-6 min-h-24">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <a href="/index.html#home" class="text-2xl md:text-3xl font-bold tracking-tight text-gray-800"> <!-- Changed to root-relative path -->
+            Himalayan<span class="text-yellow-500">Peaks</span>
+            <!-- <img src="/images/logo.png" alt="Himalayan Peaks Logo" class="h-10 md:h-12"> --> <!-- Example with root-relative path -->
           </a>
-          <div class="hidden md:flex space-x-8">
-            <a
-              href="#home"
-              class="text-white hover:text-yellow-400 transition-colors duration-300"
-              >Home</a
-            >
-            <a
-              href="#destinations"
-              class="text-white hover:text-yellow-400 transition-colors duration-300"
-              >Destinations</a
-            >
-            <a
+          <div class="flex flex-col md:flex-row items-center space-x-3 md:space-x-6">
+            <div class="text-right sm:block">
+              <p class="text-xs text-gray-500">Quick Questions? Email Us</p>
+              <a href="mailto:info@himalayanpeaks.com" class="text-xl md:text-2xl text-gray-700 hover:text-yellow-600 font-medium">info@himalayanpeaks.com</a>
+            </div>
+            <div class="flex items-center">
+              <!-- <img src="/images/paul-expert.jpg" alt="Travel Expert Paul" class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-yellow-500 object-cover mr-2 hidden md:block"> -->
+              <!-- IMPORTANT: Replace with actual path. Using root-relative /images/ -->
+              <div class="text-right">
+                <p class="hidden md:block text-xs text-gray-500">Talk to an Travel Expert (Paul)</p>
+                <a href="https://wa.me/9779840055491" target="_blank" class="text-2xl md:text-2xl text-gray-700 hover:text-yellow-600 font-medium flex items-center justify-end">
+                  <i class="fab fa-whatsapp text-green-500 mr-1 text-xl md:text-lg"></i>
+                  +977 9840055491
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ... your existing nav content ... -->
+      <div class="container mx-auto flex justify-between items-center mt-5">
+        <a href="#home" class="text-white text-3xl font-bold tracking-tight">
+          <!-- Himalayan<span class="text-yellow-400">Peaks</span> -->
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#home"
+            class="text-white hover:text-yellow-400 transition-colors duration-300"
+            >Home</a
+          >
+          <a
             href="#destinations"
             class="text-white hover:text-yellow-400 transition-colors duration-300"
-            >Trekking</a
+            >Destinations</a
           >
           <a
           href="#destinations"
           class="text-white hover:text-yellow-400 transition-colors duration-300"
-          >Tour</a
+          >Trekking</a
         >
         <a
         href="#destinations"
         class="text-white hover:text-yellow-400 transition-colors duration-300"
-        >Peak Climbing</a
+        >Tour</a
       >
-            <a
-              href="#reviews"
-              class="text-white hover:text-yellow-400 transition-colors duration-300"
-              >Reviews</a
-            >
-            <a
-              href="#contact"
-              class="text-white hover:text-yellow-400 transition-colors duration-300"
-              >Contact</a
-            >
-          </div>
-          <!-- Mobile Menu Button (requires JS for functionality) -->
-          <button
-            id="mobile-menu-button"
-            class="md:hidden text-white focus:outline-none"
+      <a
+      href="#destinations"
+      class="text-white hover:text-yellow-400 transition-colors duration-300"
+      >Peak Climbing</a
+    >
+          <a
+            href="#reviews"
+            class="text-white hover:text-yellow-400 transition-colors duration-300"
+            >Reviews</a
           >
-            <svg
-              class="w-8 h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
+          <a
+            href="#contact"
+            class="text-white hover:text-yellow-400 transition-colors duration-300"
+            >Contact</a
+          >
         </div>
-      </nav>
-      <!-- Mobile Menu (hidden by default, shown by JS) -->
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden absolute top-16 left-0 right-0 bg-black bg-opacity-90 z-10 p-4"
-      >
-        <a
-          href="#home"
-          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded transition-colors duration-300"
-          >Home</a
+        <!-- Mobile Menu Button (requires JS for functionality) -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-white focus:outline-none"
         >
-        <a
-          href="#destinations"
-          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded transition-colors duration-300"
-          >Destinations</a
-        >
-        <a
-          href="#reviews"
-          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded transition-colors duration-300"
-          >Reviews</a
-        >
-        <a
-          href="#contact"
-          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded transition-colors duration-300"
-          >Contact</a
-        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
       </div>
+  </nav>
+  <!-- Mobile Menu (remains the same) -->
+  <div
+      id="mobile-menu"
+      class="hidden md:hidden absolute top-16 left-0 right-0 bg-black bg-opacity-90 z-10 p-4"
+    >
+      <!-- ... your existing mobile menu links ... -->
+      <a
+        href="#home"
+        class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded transition-colors duration-300"
+        >Home</a
+      >
+      <a
+        href="#destinations"
+        class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded transition-colors duration-300"
+        >Destinations</a
+      >
+      <a
+        href="#reviews"
+        class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded transition-colors duration-300"
+        >Reviews</a
+      >
+      <a
+        href="#contact"
+        class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded transition-colors duration-300"
+        >Contact</a
+      >
+  </div>
 
-      <!-- Hero Content -->
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <!-- Overlay -->
-      <div
-        class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4"
+  <!-- Overlay (remains the same) -->
+  <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+
+  <!-- Hero Content (remains the same, but now z-10 to be above video overlay) -->
+  <div
+      class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4"
+    >
+      <!-- ... your existing hero h1, p, and button ... -->
+      <h1
+        class="text-5xl md:text-7xl lg:text-8xl text-white font-extrabold mb-6 drop-shadow-lg fade-in-section"
       >
-        <h1
-          class="text-5xl md:text-7xl lg:text-8xl text-white font-extrabold mb-6 drop-shadow-lg fade-in-section"
-        >
-          Experience the Majesty <br class="hidden md:block" />of the Himalayas
-        </h1>
-        <p
-          class="text-lg md:text-xl text-yellow-100 mb-10 max-w-2xl drop-shadow-md fade-in-section delay-1"
-        >
-          Embark on unforgettable journeys through breathtaking landscapes and
-          ancient cultures.
-        </p>
-        <a
-          href="#destinations"
-          class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-4 px-10 rounded-lg text-xl shadow-lg transform hover:scale-105 transition-all duration-300 fade-in-section delay-2"
-        >
-          Book Your Trek
-        </a>
-      </div>
-    </header>
+        Experience the Majesty <br class="hidden md:block" />of the Himalayas
+      </h1>
+      <p
+        class="text-lg md:text-xl text-yellow-100 mb-10 max-w-2xl drop-shadow-md fade-in-section delay-1"
+      >
+        Embark on unforgettable journeys through breathtaking landscapes and
+        ancient cultures.
+      </p>
+      <a
+        href="#destinations"
+        class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-4 px-10 rounded-lg text-xl shadow-lg transform hover:scale-105 transition-all duration-300 fade-in-section delay-2"
+      >
+        Book Your Trek
+      </a>
+  </div>
+</header>
     <!-- 2.5 Our Activities Section (NEW) -->
     <section id="our-activities" class="py-16 md:py-24 bg-white">
       <div class="container mx-auto px-6">
@@ -197,7 +251,7 @@
           <!-- Activity Card 1: Climbing -->
           <a href="nepal-activities-by-category.html?category=peak_climbing"
              class="activity-promo-card relative block aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5">
-            <img src="https://images.pexels.com/photos/713741/pexels-photo-713741.jpeg?auto=compress&cs=tinysrgb&w=800" 
+            <img src="https://th.bing.com/th/id/OIP.wn2ORH9ycQ6twg_JN5MyyAHaFj?rs=1&pid=ImgDetMain" 
                  alt="Peak Climbing in Nepal" 
                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
@@ -209,7 +263,7 @@
           <!-- Activity Card 2: Nepal Helicopter Tours -->
           <a href="nepal-activities-by-category.html?category=helicopter_tours"
              class="activity-promo-card relative block aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5">
-            <img src="https://images.pexels.com/photos/10787902/pexels-photo-10787902.jpeg?auto=compress&cs=tinysrgb&w=800" 
+            <img src="https://th.bing.com/th/id/OIP.TzT1yMDMeE002Q0REYkvewHaEH?rs=1&pid=ImgDetMain" 
                  alt="Nepal Helicopter Tours" 
                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
@@ -221,7 +275,7 @@
           <!-- Activity Card 3: Tours -->
           <a href="nepal-activities-by-category.html?category=package_tours"
              class="activity-promo-card relative block aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5">
-            <img src="https://images.pexels.com/photos/1687831/pexels-photo-1687831.jpeg?auto=compress&cs=tinysrgb&w=800" 
+            <img src="https://th.bing.com/th/id/OIP.KPyHtaR1nVy6ZuWVxKejzgHaEX?rs=1&pid=ImgDetMain" 
                  alt="Cultural and Adventure Tours in Nepal" 
                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
@@ -233,7 +287,7 @@
           <!-- Activity Card 4: Trekking -->
           <a href="nepal-activities-by-category.html?category=trekking_trips"
              class="activity-promo-card relative block aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5">
-            <img src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800" 
+            <img src="https://th.bing.com/th/id/OIP.L1r1t3EtE4gvuwm1tYdqkQHaEe?rs=1&pid=ImgDetMain" 
                  alt="Trekking in Nepal Himalayas" 
                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
@@ -322,6 +376,93 @@
         </div>
       </div>
     </section>
+
+
+
+
+    <section id="best-nepal-treks" class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 uppercase tracking-wider">
+          NEPAL BEST TREKKING
+        </h2>
+        <h3 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-800">
+          TRIPS
+        </h3>
+        <div class="flex justify-center mb-12 md:mb-16">
+          <span class="inline-block w-20 h-1 bg-blue-600 rounded"></span>
+          <span class="inline-block w-4 h-1 mx-1 bg-blue-600 rounded"></span>
+          <span class="inline-block w-2 h-1 bg-blue-600 rounded"></span>
+        </div>
+
+        <div id="best-treks-grid" class="grid grid-cols-1 sm:grid-cols-2 md:pl-20 md:pr-20  gap-6 md:gap-8">
+          <!-- Trek cards will be injected here by JavaScript -->
+        </div>
+        <div id="loading-best-treks" class="text-center text-gray-600 py-8">
+            <i class="fas fa-spinner fa-spin fa-2x"></i>
+            <p class="mt-2">Loading best treks...</p>
+        </div>
+         <div class="text-center mt-12">
+            <a href="nepal-activities-by-category.html?category=trekking_trips"
+               class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg text-lg shadow-md transform hover:scale-105 transition-all duration-300">
+                View All Trekking Trips
+            </a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="best-selling-tours" class="py-16 md:py-24 bg-gray-50"> 
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 uppercase tracking-wider">
+          OUR BEST SELLING
+        </h2>
+        <h3 class="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-800">
+          TOURS
+        </h3>
+        <div class="flex justify-center mb-12 md:mb-16">
+          <span class="inline-block w-20 h-1 bg-orange-500 rounded"></span>
+          <span class="inline-block w-4 h-1 mx-1 bg-orange-500 rounded"></span>
+          <span class="inline-block w-2 h-1 bg-orange-500 rounded"></span>
+        </div>
+
+        <div id="best-tours-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <!-- Tour cards will be injected here by JavaScript -->
+        </div>
+        <div id="loading-best-tours" class="text-center text-gray-600 py-8">
+            <i class="fas fa-spinner fa-spin fa-2x"></i>
+            <p class="mt-2">Loading best selling tours...</p>
+        </div>
+         <div class="text-center mt-12">
+            <a href="nepal-activities-by-category.html?category=package_tours"
+               class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg text-lg shadow-md transform hover:scale-105 transition-all duration-300">
+                View All Package Tours
+            </a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <main>
       <!-- 2. Destinations Section -->
@@ -827,6 +968,269 @@ style="min-height: 480px;"
         }s, transform 0.6s ease-out ${index * 0.1}s`;
         observer.observe(card);
       });
+
+
+      // ... (keep your existing script for mobile menu, current year, observers, etc.) ...
+
+// --- Function to create a "Best Trek" card (STYLE MATCHING IMAGE) ---
+function createBestTrekCardFromData(trekData) {
+    // trekData is expected to be an object like:
+    // {
+    //   name: "Everest Base Camp Trek",
+    //   current_price: 1450,
+    //   duration: "14 Day 13 Night",
+    //   image_url: "url/to/image.jpg", // This will be the primary image for the card
+    //   discount_percent: "6%", // Optional
+    //   location: "Kathmandu", // Optional
+    //   region_title: "Everest Region Trekking" // To build the detail link
+    // }
+
+    const trekDetailLink = `trek-detail.html?category=trekking_trips®ionTitle=${encodeURIComponent(trekData.region_title || 'Unknown Region')}&trekName=${encodeURIComponent(trekData.name)}`;
+
+    const imageUrl = trekData.image_url || 'https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1'; // Fallback image
+    const locationText = trekData.location || trekData.region_title?.split(" ")[0] || "Himalayas";
+    // Simple duration display, assuming format like "X Day Y Night" or "X-Y Days"
+    let durationDisplay = trekData.duration;
+    if (trekData.duration && trekData.duration.includes("Day") && trekData.duration.includes("Night")) {
+        durationDisplay = trekData.duration; // Use as is if already formatted
+    } else if (trekData.duration && trekData.duration.includes("-")) {
+        const parts = trekData.duration.split('-');
+        durationDisplay = `${parts[0].trim()} - ${parts[1].trim()}`;
+    }
+
+
+    return `
+        <a href="${trekDetailLink}" class="best-trek-card block bg-white rounded-md shadow-md hover:shadow-lg transition-all duration-300 ease-out group flex flex-col overflow-hidden">
+            <div class="relative h-48 sm:h-56 overflow-hidden">
+                <img src="${imageUrl}"
+                     alt="${trekData.name}"
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                     loading="lazy">
+                ${trekData.discount_percent ? `
+                    <span class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">${trekData.discount_percent}</span>
+                ` : ''}
+                 <p class="absolute bottom-2 left-3 text-white text-lg font-bold drop-shadow-md">$${trekData.current_price}</p>
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+                <p class="text-xs text-gray-500 mb-1 uppercase tracking-wider">${locationText}</p>
+                <h4 class="text-md font-semibold text-gray-800 group-hover:text-yellow-600 mb-2 leading-tight h-12 overflow-hidden">
+                    ${trekData.name}
+                </h4>
+                <p class="text-xs text-gray-500 mt-auto">${durationDisplay}</p>
+            </div>
+        </a>
+    `;
+}
+
+// --- Function to load and display "Best Nepal Treks" from data.json ---
+async function loadAndDisplayBestNepalTreks() {
+    const bestTreksGrid = document.getElementById('best-treks-grid');
+    const loadingDiv = document.getElementById('loading-best-treks');
+    if (!bestTreksGrid || !loadingDiv) {
+        console.error("Required elements for best treks not found.");
+        return;
+    }
+
+    const MAX_BEST_TREKS_TO_SHOW = 8;
+
+    try {
+        const response = await fetch('data.json');
+        if (!response.ok) throw new Error(`Failed to fetch data.json (status: ${response.status})`);
+        const allData = await response.json();
+
+        const trekkingCategoryObject = allData.find(cat => cat.hasOwnProperty('trekking_trips'));
+        if (!trekkingCategoryObject || !trekkingCategoryObject.trekking_trips) {
+            loadingDiv.innerHTML = '<p>Trekking trips data category not found in data.json.</p>';
+            return;
+        }
+
+        let treksForDisplay = [];
+        // Collect all treks from all trekking regions
+        trekkingCategoryObject.trekking_trips.forEach(region => {
+            if (region.available_treks) {
+                region.available_treks.forEach(trek => {
+                    // Add the region_title to each trek object for easier link generation
+                    treksForDisplay.push({ ...trek, region_title: region.title, image_url: trek.image_url || region.image_url });
+                });
+            }
+        });
+
+        // If you want to ensure specific treks appear and have the discount/location,
+        // you'd pre-populate them in data.json with those fields.
+        // This simpler version just takes the first MAX_BEST_TREKS_TO_SHOW.
+        // For a more "curated" list, you would filter/sort `treksForDisplay` here
+        // based on some criteria (e.g., a "is_featured" flag in data.json)
+        // or manually pick them like in the more complex previous example.
+
+        // For this simplified version, let's just take the first few available.
+        // To match the visual style, ensure these treks in your data.json have
+        // 'discount_percent' and 'location' fields. If not, the card will adapt.
+        const selectedTreks = treksForDisplay.slice(0, MAX_BEST_TREKS_TO_SHOW);
+
+        if (selectedTreks.length > 0) {
+            bestTreksGrid.innerHTML = selectedTreks.map(trekData => createBestTrekCardFromData(trekData)).join('');
+            loadingDiv.style.display = 'none';
+
+            // Optional: Re-apply IntersectionObserver to new cards if you use it for animations
+            if (typeof observer !== 'undefined' && typeof observeNewBestTrekCards === 'function') {
+                observeNewBestTrekCards(); // Assuming observeNewBestTrekCards is defined as in previous example
+            }
+
+        } else {
+            loadingDiv.innerHTML = '<p>No trekking trips available to display at this moment.</p>';
+        }
+
+    } catch (error) {
+        console.error("Error loading best Nepal treks:", error);
+        loadingDiv.innerHTML = `<p>Could not load treks. ${error.message}</p>`;
+    }
+}
+
+// Call the function when the DOM is loaded
+document.addEventListener('DOMContentLoaded', loadAndDisplayBestNepalTreks);
+
+// If you use the IntersectionObserver for fade-in animations,
+// you might need a function like this to apply it to the newly added cards.
+// Ensure 'observer' is your globally defined IntersectionObserver instance.
+function observeNewBestTrekCards() {
+    const newCards = document.querySelectorAll('#best-treks-grid .best-trek-card');
+    newCards.forEach((card, index) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(30px)";
+        card.style.transition = `opacity 0.5s ease-out ${index * 0.08}s, transform 0.5s ease-out ${index * 0.08}s`;
+        if (typeof observer !== 'undefined') { // Check if global observer is defined
+             observer.observe(card);
+        }
+    });
+}
+
+// ... (existing script for mobile menu, current year, observers, best treks, etc.) ...
+
+// --- Function to create a "Best Selling Tour" card (reuses similar structure) ---
+// We can adapt the createBestTrekCardFromData or make a new one if parsing 'price_range' is different.
+// For simplicity, let's adapt it slightly.
+function createBestSellingTourCard(tourData) {
+    // tourData is expected to be an object from package_tours:
+    // {
+    //   title: "Nepal Highlight Tour", (will be used as name)
+    //   price_range: "$1200 - $1800",
+    //   duration: "10-12 Days",
+    //   image_url: "url/to/image.jpg",
+    //   discount_percent: "10%", // Optional
+    //   location: "Multi-city", // Optional
+    // }
+
+    // For tours, a detail page might be structured differently or not exist yet.
+    // Let's link to the category page for now, or you can create a tour-detail.html later.
+    const tourDetailLink = `nepal-activities-by-category.html?category=package_tours#${encodeURIComponent(tourData.title.replace(/\s+/g, '-'))}`;
+    // OR if you create tour-detail.html:
+    // const tourDetailLink = `tour-detail.html?category=package_tours&tourTitle=${encodeURIComponent(tourData.title)}`;
+
+
+    const imageUrl = tourData.image_url || 'https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1'; // Fallback image
+    const locationText = tourData.location || "Multiple Locations";
+
+    // Parse price_range to show "From $X" or the range.
+    let priceDisplay = "Contact Us";
+    if (tourData.price_range) {
+        if (tourData.price_range.toLowerCase().includes("from")) {
+            priceDisplay = tourData.price_range;
+        } else if (tourData.price_range.includes("-")) {
+            priceDisplay = `From $${tourData.price_range.split('-')[0].replace(/\$/g, '').trim()}`;
+        } else if (tourData.price_range.match(/\d+/)) { // If just a number
+             priceDisplay = `$${tourData.price_range.replace(/\$/g, '').trim()}`;
+        }
+    } else if (tourData.current_price) { // Fallback if it has current_price like treks
+        priceDisplay = `$${tourData.current_price}`;
+    }
+
+
+    return `
+        <a href="${tourDetailLink}" class="best-selling-tour-card block bg-white rounded-md shadow-md hover:shadow-lg transition-all duration-300 ease-out group flex flex-col overflow-hidden">
+            <div class="relative h-48 sm:h-56 overflow-hidden">
+                <img src="${imageUrl}"
+                     alt="${tourData.title}"
+                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                     loading="lazy">
+                ${tourData.discount_percent ? `
+                    <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">${tourData.discount_percent}</span>
+                ` : ''}
+                 <p class="absolute bottom-2 left-3 text-white text-lg font-bold drop-shadow-md">${priceDisplay}</p>
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+                <p class="text-xs text-gray-500 mb-1 uppercase tracking-wider">${locationText}</p>
+                <h4 class="text-md font-semibold text-gray-800 group-hover:text-orange-600 mb-2 leading-tight h-12 overflow-hidden">
+                    ${tourData.title}
+                </h4>
+                <p class="text-xs text-gray-500 mt-auto">${tourData.duration}</p>
+            </div>
+        </a>
+    `;
+}
+
+
+// --- Function to load and display "Best Selling Tours" from data.json ---
+async function loadAndDisplayBestSellingTours() {
+    const bestToursGrid = document.getElementById('best-tours-grid');
+    const loadingToursDiv = document.getElementById('loading-best-tours');
+    if (!bestToursGrid || !loadingToursDiv) {
+        console.error("Required elements for best selling tours not found.");
+        return;
+    }
+
+    const MAX_BEST_TOURS_TO_SHOW = 4; // Show 4 for this section, or adjust as needed
+
+    try {
+        const response = await fetch('data.json');
+        if (!response.ok) throw new Error(`Failed to fetch data.json (status: ${response.status})`);
+        const allData = await response.json();
+
+        const packageToursCategoryObject = allData.find(cat => cat.hasOwnProperty('package_tours'));
+        if (!packageToursCategoryObject || !packageToursCategoryObject.package_tours) {
+            loadingToursDiv.innerHTML = '<p>Package tours data category not found in data.json.</p>';
+            return;
+        }
+
+        let toursForDisplay = packageToursCategoryObject.package_tours;
+
+        // To make this look like your image, ensure the tours in your data.json have
+        // 'discount_percent' and 'location' fields.
+        // This simplified version just takes the first MAX_BEST_TOURS_TO_SHOW.
+        const selectedTours = toursForDisplay.slice(0, MAX_BEST_TOURS_TO_SHOW);
+
+        if (selectedTours.length > 0) {
+            bestToursGrid.innerHTML = selectedTours.map(tourData => createBestSellingTourCard(tourData)).join('');
+            loadingToursDiv.style.display = 'none';
+
+            // Optional: Re-apply IntersectionObserver to new cards
+            if (typeof observer !== 'undefined' && typeof observeNewBestSellingTourCards === 'function') {
+                observeNewBestSellingTourCards();
+            }
+        } else {
+            loadingToursDiv.innerHTML = '<p>No best selling tours available to display at this moment.</p>';
+        }
+
+    } catch (error) {
+        console.error("Error loading best selling tours:", error);
+        loadingToursDiv.innerHTML = `<p>Could not load tours. ${error.message}</p>`;
+    }
+}
+
+// Call the function when the DOM is loaded
+document.addEventListener('DOMContentLoaded', loadAndDisplayBestSellingTours);
+
+// If you use IntersectionObserver for animations, create a similar function for these cards
+function observeNewBestSellingTourCards() {
+    const newCards = document.querySelectorAll('#best-tours-grid .best-selling-tour-card');
+    newCards.forEach((card, index) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(30px)";
+        card.style.transition = `opacity 0.5s ease-out ${index * 0.08}s, transform 0.5s ease-out ${index * 0.08}s`;
+        if (typeof observer !== 'undefined') {
+            observer.observe(card);
+        }
+    });
+}
     </script>
   </body>
 </html>

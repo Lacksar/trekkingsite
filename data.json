@@ -4,7 +4,7 @@
       {
         "title": "Annapurna Region Trekking",
         "description": "Explore the diverse landscapes of the Annapurna massif, a jewel of the Himalayas. This region offers everything from lush subtropical rhododendron forests and terraced paddy fields to arid high-altitude deserts and towering snow-capped peaks. Experience the rich Gurung and Thakali cultures, warm hospitality, and some of the most iconic trekking routes in the world, with trails suitable for various fitness levels.",
-        "image_url": "https://images.pexels.com/photos/238622/pexels-photo-238622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "image_url": "images/annapurnabase/annapurnabase.jpeg",
         "available_treks": [
           {
             "name": "Annapurna Base Camp Trek",
@@ -61,7 +61,7 @@
       {
         "title": "Langtang Region Trekking",
         "description": "Discover the serene beauty of the Langtang Valley, often described as the 'valley of glaciers.' Located relatively close to Kathmandu, this region offers a stunning combination of alpine scenery, Tamang cultural heritage, lush forests, and dramatic mountain views, including Langtang Lirung (7246m). It's a less crowded alternative to the Everest and Annapurna regions, providing a more intimate trekking experience.",
-        "image_url": "https://images.pexels.com/photos/1687574/pexels-photo-1687574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "image_url": "images/langtang/langtang1.jpeg",
         "available_treks": [
           {
             "name": "Langtang Valley Trek",
@@ -73,6 +73,7 @@
           },
           {
             "name": "Shivapuri Nagarkot Trek",
+            "image_url": "https://th.bing.com/th/id/OIP.OkTzcsiFUYtL1K6xYKSC5gHaD0?rs=1&pid=ImgDetMain",
             "current_price": 450,
             "duration": "3 Days",
             "difficulty": "Easy to Moderate",
@@ -91,6 +92,7 @@
             "name": "Gosaikunda Helambu Trek",
             "current_price": 1250,
             "duration": "10-13 Days",
+            "image_url": "images/langtangwithgosaikunda/langtanggosaikunda.jpeg",
             "difficulty": "Moderate to Strenuous",
             "max_altitude": "4,610m (Gosaikunda Lake)",
             "description": "A diverse trek combining the sacred alpine lakes of Gosaikunda with the culturally rich Helambu region. Witness the stunning Gosaikunda Lake, revered by both Hindus and Buddhists, cross the Laurebina Pass (4610m), and explore the Sherpa villages and monasteries of Helambu. Offers a mix of natural beauty, spiritual significance, and cultural exploration."
@@ -99,6 +101,7 @@
             "name": "Langtang Gosaikunda Circuit Trekking",
             "current_price": 1550,
             "duration": "15-17 Days",
+            "image_url": "images/langtangwithgosaikunda/gosaikunda2.jpeg",
             "difficulty": "Strenuous",
             "max_altitude": "4,610m (Gosaikunda Lake/Laurebina Pass)",
             "description": "An challenging and rewarding circuit that combines the Langtang Valley, the sacred Gosaikunda Lakes, and crossing the Laurebina Pass. This comprehensive trek offers a full spectrum of Langtang's beauty, from lush valleys and Tamang villages to high alpine lakes and panoramic mountain passes. A true adventure for seasoned trekkers."
@@ -116,7 +119,7 @@
       {
         "title": "Everest Region Trekking",
         "description": "Journey to the roof of the world in the legendary Everest (Khumbu) region, home to Mount Everest (8848.86m) and several other 8000m+ peaks. Experience the unique Sherpa culture, visit ancient monasteries, and witness some of the most awe-inspiring mountain scenery on the planet. Treks range from the classic Everest Base Camp to challenging high pass circuits.",
-        "image_url": "https://images.pexels.com/photos/714258/pexels-photo-714258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "image_url": "images/everestbase/everestbase1.jpeg",
         "available_treks": [
           {
             "name": "Luxury Everest Base Camp Trek",
@@ -200,7 +203,8 @@
             "duration": "14-17 Days",
             "difficulty": "Moderate to Strenuous",
             "max_altitude": "3,840m (Lo Manthang) / ~4000m on passes",
-            "description": "Explore the 'Forbidden Kingdom' of Upper Mustang, a culturally and geographically unique region with an arid, desert-like landscape, ancient Tibetan Buddhist monasteries, mysterious sky caves, and starkly beautiful rock formations. This trek offers a journey back in time into a preserved Tibetan culture."
+            "description": "Explore the 'Forbidden Kingdom' of Upper Mustang, a culturally and geographically unique region with an arid, desert-like landscape, ancient Tibetan Buddhist monasteries, mysterious sky caves, and starkly beautiful rock formations. This trek offers a journey back in time into a preserved Tibetan culture.",
+            "image_url": "images/uppermustang/mustang1.jpeg"
           },
           {
             "name": "Manaslu Circuit Trek",
@@ -208,7 +212,8 @@
             "duration": "15-18 Days",
             "difficulty": "Strenuous",
             "max_altitude": "5,106m (Larkya La Pass)",
-            "description": "Circumnavigate the world's eighth highest mountain, Manaslu (8163m). This challenging trek offers a stunning variety of scenery, from subtropical forests to high alpine terrain, rich Tibetan-influenced culture, and the dramatic crossing of the Larkya La Pass. A great alternative to the Annapurna Circuit."
+            "description": "Circumnavigate the world's eighth highest mountain, Manaslu (8163m). This challenging trek offers a stunning variety of scenery, from subtropical forests to high alpine terrain, rich Tibetan-influenced culture, and the dramatic crossing of the Larkya La Pass. A great alternative to the Annapurna Circuit.",
+            "image_url": "https://th.bing.com/th/id/R.178c71a8482a6ca98b873564b48ff0a4?rik=CUT2vXI%2fP3V0Dw&pid=ImgRaw&r=0"
           },
           {
             "name": "Kanchenjunga Base Camp Trek",
@@ -410,7 +415,7 @@
         "duration": "55-65 Days",
         "difficulty": "Extreme / Expedition Grade",
         "price_range": "$35,000 - $100,000+",
-        "image_url": "https://example.com/images/everest-expedition.jpg"
+        "image_url": "images/everestexpedition/everestexpedition1.jpeg"
       },
       {
         "title": "Manaslu Expedition (8,163m)",
@@ -418,7 +423,7 @@
         "duration": "40-50 Days",
         "difficulty": "Very High / Expedition Grade",
         "price_range": "$15,000 - $25,000",
-        "image_url": "https://example.com/images/manaslu-expedition.jpg"
+        "image_url": "images/manaslu/manaslu.jpeg"
       },
       {
         "title": "Ama Dablam Expedition (6,812m)",
