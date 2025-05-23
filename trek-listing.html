@@ -35,81 +35,132 @@
   <body class="bg-gray-100 text-gray-800 antialiased">
     <header
       id="page-hero"
-      class="relative h-[35vh] md:h-[45vh] flex flex-col hero-bg-dynamic"
+      class="relative h-[60vh] md:h-[100vh] flex flex-col hero-bg-dynamic"
     >
-      <nav class="absolute top-0 left-0 right-0 z-20 p-6">
-        <div class="container mx-auto flex justify-between items-center">
-          <a
-            href="index.html"
-            class="text-white text-3xl font-bold tracking-tight"
-          >
-            Himalayan<span class="text-yellow-400">Peaks</span>
-          </a>
-          <div class="hidden md:flex space-x-8">
-            <a href="index.html#home" class="text-white hover:text-yellow-400"
+    <nav class="absolute top-0 left-0 right-0 z-20 ">
+      <div class="w-full sticky top-0 z-50" id="main-navigation-container">
+  
+        <!-- Top Announcement Bar -->
+        <div class="bg-blue-700 text-center py-2 px-4">
+          <p class="text-sm text-yellow-300 font-medium">
+            Nepal Trek Booking Open For 2025/26
+          </p>
+        </div>
+      
+        <!-- Middle Bar: Logo & Quick Contacts -->
+        <div class="bg-white shadow-md py-3 px-6 min-h-24">
+          <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="/index.html#home" class="text-2xl md:text-3xl font-bold tracking-tight text-gray-800"> <!-- Changed to root-relative path -->
+              Himalayan<span class="text-yellow-500">Peaks</span>
+              <!-- <img src="/images/logo.png" alt="Himalayan Peaks Logo" class="h-10 md:h-12"> --> <!-- Example with root-relative path -->
+            </a>
+            <div class="flex flex-col md:flex-row items-center space-x-3 md:space-x-6">
+              <div class="text-right sm:block">
+                <p class="text-xs text-gray-500">Quick Questions? Email Us</p>
+                <a href="mailto:info@himalayanpeaks.com" class="text-xl md:text-2xl text-gray-700 hover:text-yellow-600 font-medium">info@himalayanpeaks.com</a>
+              </div>
+              <div class="flex items-center">
+                <img src="https://th.bing.com/th/id/R.95e45a66c918a53280e796b44add2d66?rik=oVKQ59XBdewj8Q&pid=ImgRaw&r=0" alt="Travel Expert Paul" class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-yellow-500 object-cover mr-2 hidden md:block">
+                <!-- IMPORTANT: Replace with actual path. Using root-relative /images/ -->
+                <div class="text-right">
+                  <p class="hidden md:block text-xs text-gray-500">Talk to an Travel Expert (Paul)</p>
+                  <a href="https://wa.me/9779840055491" target="_blank" class="text-2xl md:text-2xl text-gray-700 hover:text-yellow-600 font-medium flex items-center justify-end">
+                    <i class="fab fa-whatsapp text-green-500 mr-1 text-xl md:text-lg"></i>
+                    +977 9840055491
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ... your existing nav content ... -->
+        <div class="container mx-auto flex justify-between items-center mt-5">
+        
+          <div class="hidden md:flex font-bold  space-x-8 text-xl">
+            <a
+              href="/index.html"
+              class="text-white hover:text-yellow-400 transition-colors duration-300"
               >Home</a
             >
             <a
-              href="nepal-categories.html"
-              class="text-white hover:text-yellow-400"
-              >Categories</a
+              href="#destinations"
+              class="text-white hover:text-yellow-400 transition-colors duration-300"
+              >Destinations</a
             >
             <a
-              href="index.html#reviews"
-              class="text-white hover:text-yellow-400"
+            href="#destinations"
+            class="text-white hover:text-yellow-400 transition-colors duration-300"
+            >Trekking</a
+          >
+          <a
+          href="#destinations"
+          class="text-white hover:text-yellow-400 transition-colors duration-300"
+          >Tour</a
+        >
+        <a
+        href="#destinations"
+        class="text-white hover:text-yellow-400 transition-colors duration-300"
+        >Peak Climbing</a
+      >
+      <a
+      href="#destinations"
+      class="text-white hover:text-yellow-400 transition-colors duration-300"
+      >Travel Information</a
+    >
+    <a
+    href="#destinations"
+    class="text-white hover:text-yellow-400 transition-colors duration-300"
+    >Company Information</a
+  >
+            <a
+              href="#reviews"
+              class="text-white hover:text-yellow-400 transition-colors duration-300"
               >Reviews</a
             >
             <a
-              href="index.html#contact"
-              class="text-white hover:text-yellow-400"
-              >Contact</a
-            >
+              href="#contact"
+              class="text-white hover:text-yellow-400 transition-colors duration-300"
+              >Contact Us</a>
           </div>
+          <!-- Mobile Menu Button (requires JS for functionality) -->
           <button
             id="mobile-menu-button"
             class="md:hidden text-white focus:outline-none"
           >
-            <svg
-              class="w-8 h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
-        </div>
-      </nav>
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden absolute top-16 left-0 right-0 bg-black bg-opacity-90 z-10 p-4"
-      >
-        <a
-          href="index.html#home"
-          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
-          >Home</a
-        >
-        <a
-          href="nepal-categories.html"
-          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
-          >Categories</a
-        >
-        <a
-          href="index.html#reviews"
-          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
-          >Reviews</a
-        >
-        <a
-          href="index.html#contact"
-          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
-          >Contact</a
-        >
       </div>
+  </nav>
+  
+  <!-- Mobile Menu Panel - This is the overlay that opens -->
+  <div
+      id="mobile-menu"
+      class="hidden md:hidden fixed inset-0 bg-black bg-opacity-95 z-50 p-4 flex flex-col items-center justify-center" {/* Changed to fixed, inset-0, bg-opacity-95, and centering content */}
+  >
+     
+  <button
+  id="mobile-menu-close-button"
+  хронически     class="absolute top-6 right-6 text-white text-4xl hover:text-yellow-400 focus:outline-none"
+  onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.body.style.overflow = '';"
+  >
+  ×
+  </button>
+  
+     
+      <div class="flex flex-col gap-6 text-center"> {/* Increased gap */}
+          <a href="/index.html" class="text-white text-2xl block hover:text-yellow-400 transition-colors duration-300">Home</a>
+          <a href="#destinations" class="text-white text-2xl block hover:text-yellow-400 transition-colors duration-300">Destinations</a>
+          <a href="#destinations" class="text-white text-2xl block hover:text-yellow-400 transition-colors duration-300">Trekking</a>
+          <a href="#destinations" class="text-white text-2xl block hover:text-yellow-400 transition-colors duration-300">Tour</a>
+          <a href="#destinations" class="text-white text-2xl block hover:text-yellow-400 transition-colors duration-300">Peak Climbing</a>
+          <a href="#destinations" class="text-white text-2xl block hover:text-yellow-400 transition-colors duration-300">Travel Information</a>
+          <a href="#destinations" class="text-white text-2xl block hover:text-yellow-400 transition-colors duration-300">Company Information</a>
+          <a href="#reviews" class="text-white text-2xl block hover:text-yellow-400 transition-colors duration-300">Reviews</a>
+          <a href="#contact" class="text-white text-2xl block hover:text-yellow-400 transition-colors duration-300">Contact Us</a>
+      </div>
+  </div>
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
       <div
         class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4"
