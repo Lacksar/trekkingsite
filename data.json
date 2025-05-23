@@ -3,140 +3,261 @@
     "trekking_trips": [
       {
         "title": "Annapurna Region Trekking",
-        "description": "Explore the diverse landscapes of the Annapurna region, offering panoramic mountain views and rich cultural experiences.",
-        "image_url": "https://www.halfwayanywhere.com/wp-content/uploads/2016/11/Annapurna-Circuit-Mountain.jpg",
+        "description": "Explore the diverse landscapes of the Annapurna massif, a jewel of the Himalayas. This region offers everything from lush subtropical rhododendron forests and terraced paddy fields to arid high-altitude deserts and towering snow-capped peaks. Experience the rich Gurung and Thakali cultures, warm hospitality, and some of the most iconic trekking routes in the world, with trails suitable for various fitness levels.",
+        "image_url": "https://images.pexels.com/photos/238622/pexels-photo-238622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "available_treks": [
           {
             "name": "Annapurna Base Camp Trek",
             "current_price": 1350,
-            "duration": "10-12 Days"
+            "original_price": 1450,
+            "duration": "10-12 Days",
+            "difficulty": "Moderate to Strenuous",
+            "max_altitude": "4,130m (Annapurna Base Camp)",
+            "description": "Embark on a classic Himalayan adventure to the natural amphitheater of Annapurna Base Camp. This iconic trek winds through picturesque Gurung villages, lush rhododendron and bamboo forests, and past cascading waterfalls. Witness breathtaking panoramic views of Annapurna I (8091m), Annapurna South, Machhapuchhre (Fishtail), Hiunchuli, and other surrounding peaks. The journey is a perfect blend of natural beauty and cultural immersion."
           },
           {
             "name": "Mardi Himal Trekking",
             "current_price": 950,
-            "duration": "7-9 Days"
+            "duration": "7-9 Days",
+            "difficulty": "Moderate",
+            "max_altitude": "4,500m (Mardi Himal Base Camp)",
+            "description": "Discover the 'hidden gem' of the Annapurna region with the Mardi Himal Trek. This less-crowded trail takes you along pristine forested ridges, offering incredibly close-up and spectacular views of Mardi Himal, Machhapuchhre, Annapurna South, and Hiunchuli. Ideal for those seeking solitude and a more 'off-the-beaten-path' experience with stunning mountain vistas."
           },
           {
             "name": "Annapurna Circuit Trek",
             "current_price": 1500,
             "original_price": 1650,
-            "duration": "14-18 Days"
+            "duration": "14-18 Days",
+            "difficulty": "Strenuous",
+            "max_altitude": "5,416m (Thorong La Pass)",
+            "description": "Circumnavigate the entire Annapurna massif on one of the world's most renowned and diverse treks. The Annapurna Circuit showcases an extraordinary range of landscapes, from subtropical forests and paddy fields to alpine meadows and arid, Tibet-like terrain in the Manang valley. The highlight is crossing the challenging Thorong La Pass, followed by a descent into the sacred pilgrimage site of Muktinath and the Kali Gandaki gorge, the world's deepest."
           },
           {
             "name": "Ghorepani Poonhill Trek",
             "current_price": 750,
-            "duration": "4-5 Days"
+            "duration": "4-5 Days",
+            "difficulty": "Easy to Moderate",
+            "max_altitude": "3,210m (Poon Hill)",
+            "description": "A perfect short trek for those with limited time, the Ghorepani Poon Hill Trek is famed for its spectacular sunrise views over the Annapurna and Dhaulagiri mountain ranges from the vantage point of Poon Hill. Trek through charming villages and dense rhododendron forests (especially vibrant in spring). It's an excellent introduction to trekking in Nepal, suitable for most fitness levels."
           },
           {
             "name": "Annapurna Panorama Trek",
             "current_price": 800,
-            "duration": "6-7 Days"
+            "duration": "6-7 Days",
+            "difficulty": "Moderate",
+            "max_altitude": "2,700m (approx)",
+            "description": "Also known as the Annapurna View Trek, this route offers magnificent panoramic views of the Annapurna and Dhaulagiri ranges without the rigors of high altitude. It's a culturally rich trek passing through traditional villages, terraced farmlands, and beautiful forests, providing a wonderful taste of Himalayan scenery and local life."
           },
           {
             "name": "Annapurna Base Camp Trek From Pokhara",
             "current_price": 1300,
-            "duration": "9-11 Days"
+            "duration": "9-11 Days",
+            "difficulty": "Moderate to Strenuous",
+            "max_altitude": "4,130m (Annapurna Base Camp)",
+            "description": "A slightly condensed version of the classic Annapurna Base Camp trek, typically starting and ending closer to Pokhara, making it ideal for those with a tighter schedule. This route still offers the full majesty of the Annapurna Sanctuary, with its towering peaks, diverse flora and fauna, and rich cultural encounters."
           }
         ]
       },
       {
         "title": "Langtang Region Trekking",
-        "description": "Discover the serene beauty of the Langtang Valley, nestled close to Kathmandu, featuring lush forests and traditional villages.",
-        "image_url": "https://media.gettyimages.com/photos/rear-view-of-trekker-sitting-on-the-top-of-tsergo-ri-4990m-the-high-picture-id1317322631",
+        "description": "Discover the serene beauty of the Langtang Valley, often described as the 'valley of glaciers.' Located relatively close to Kathmandu, this region offers a stunning combination of alpine scenery, Tamang cultural heritage, lush forests, and dramatic mountain views, including Langtang Lirung (7246m). It's a less crowded alternative to the Everest and Annapurna regions, providing a more intimate trekking experience.",
+        "image_url": "https://images.pexels.com/photos/1687574/pexels-photo-1687574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "available_treks": [
           {
             "name": "Langtang Valley Trek",
             "current_price": 1100,
-            "duration": "8-10 Days"
+            "duration": "8-10 Days",
+            "difficulty": "Moderate",
+            "max_altitude": "3,870m (Kyanjin Gompa)",
+            "description": "Journey into the heart of the Langtang Valley, reaching the sacred Kyanjin Gompa, a renowned Buddhist monastery. This trek offers spectacular views of Langtang Lirung, Ganesh Himal, and other peaks. Experience the unique Tamang culture, walk through beautiful forests, and witness the resilience of the local communities. Optional day hikes to Kyanjin Ri or Tserko Ri offer even more breathtaking panoramas."
           },
           {
             "name": "Shivapuri Nagarkot Trek",
             "current_price": 450,
-            "duration": "3 Days"
+            "duration": "3 Days",
+            "difficulty": "Easy to Moderate",
+            "max_altitude": "2,175m (Nagarkot)",
+            "description": "A perfect short getaway from Kathmandu, this trek takes you through Shivapuri National Park, rich in biodiversity, to the popular hill station of Nagarkot. Enjoy stunning sunrise and sunset views over a vast expanse of the Himalayas, including Everest on a clear day. It's an ideal trek for nature lovers and those seeking a quick Himalayan experience."
           },
           {
             "name": "Tamang Heritage & Langtang Valley Trek",
             "current_price": 1400,
-            "duration": "12-14 Days"
+            "duration": "12-14 Days",
+            "difficulty": "Moderate",
+            "max_altitude": "3,870m (Kyanjin Gompa)",
+            "description": "Combine the cultural richness of the Tamang Heritage Trail with the stunning natural beauty of the Langtang Valley. This trek offers a deeper insight into the ancient traditions, lifestyle, and craftsmanship of the Tamang people, complemented by magnificent mountain scenery, hot springs, and beautiful monasteries."
           },
           {
             "name": "Gosaikunda Helambu Trek",
             "current_price": 1250,
-            "duration": "10-13 Days"
+            "duration": "10-13 Days",
+            "difficulty": "Moderate to Strenuous",
+            "max_altitude": "4,610m (Gosaikunda Lake)",
+            "description": "A diverse trek combining the sacred alpine lakes of Gosaikunda with the culturally rich Helambu region. Witness the stunning Gosaikunda Lake, revered by both Hindus and Buddhists, cross the Laurebina Pass (4610m), and explore the Sherpa villages and monasteries of Helambu. Offers a mix of natural beauty, spiritual significance, and cultural exploration."
           },
           {
             "name": "Langtang Gosaikunda Circuit Trekking",
             "current_price": 1550,
-            "duration": "15-17 Days"
+            "duration": "15-17 Days",
+            "difficulty": "Strenuous",
+            "max_altitude": "4,610m (Gosaikunda Lake/Laurebina Pass)",
+            "description": "An challenging and rewarding circuit that combines the Langtang Valley, the sacred Gosaikunda Lakes, and crossing the Laurebina Pass. This comprehensive trek offers a full spectrum of Langtang's beauty, from lush valleys and Tamang villages to high alpine lakes and panoramic mountain passes. A true adventure for seasoned trekkers."
           },
           {
             "name": "Langtang Valley and Gosaikunda Trek",
             "current_price": 1450,
-            "duration": "13-15 Days"
+            "duration": "13-15 Days",
+            "difficulty": "Moderate to Strenuous",
+            "max_altitude": "4,610m (Gosaikunda Lake/Laurebina Pass)",
+            "description": "This popular trek links the spectacular Langtang Valley with the holy Gosaikunda Lakes. Experience the rich Tamang culture of Langtang, ascend to the serene alpine environment of Kyanjin Gompa, and then cross over to the Gosaikunda region, offering a blend of natural wonders and spiritual sanctity."
           }
         ]
       },
       {
         "title": "Everest Region Trekking",
-        "description": "Embark on a journey to the base of the world's highest peak, experiencing Sherpa culture and breathtaking Himalayan vistas.",
-        "image_url": "https://www.halfwayanywhere.com/wp-content/uploads/2016/10/Everest-Base-Camp-Trek-Everest-Peak.jpg",
+        "description": "Journey to the roof of the world in the legendary Everest (Khumbu) region, home to Mount Everest (8848.86m) and several other 8000m+ peaks. Experience the unique Sherpa culture, visit ancient monasteries, and witness some of the most awe-inspiring mountain scenery on the planet. Treks range from the classic Everest Base Camp to challenging high pass circuits.",
+        "image_url": "https://images.pexels.com/photos/714258/pexels-photo-714258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "available_treks": [
           {
             "name": "Luxury Everest Base Camp Trek",
             "current_price": 2300,
             "original_price": 2500,
-            "duration": "14-16 Days"
+            "duration": "14-16 Days",
+            "difficulty": "Strenuous",
+            "max_altitude": "5,545m (Kala Patthar)",
+            "description": "Experience the majesty of Everest Base Camp with added comfort and style. This trek utilizes higher-quality lodges with better amenities, often including attached bathrooms where available, and may incorporate helicopter returns for a more leisurely experience. Witness the iconic Khumbu Icefall, Everest, Lhotse, Nuptse, and Ama Dablam while enjoying a more pampered journey."
           },
           {
             "name": "Everest Base Camp Trek",
             "current_price": 1800,
-            "duration": "12-14 Days"
+            "duration": "12-14 Days",
+            "difficulty": "Strenuous",
+            "max_altitude": "5,545m (Kala Patthar)",
+            "description": "The classic trek to the foot of the world's highest mountain, Mount Everest. Follow in the footsteps of legendary mountaineers, pass through vibrant Sherpa villages like Namche Bazaar and Dingboche, visit ancient monasteries like Tengboche, and stand in awe at Everest Base Camp (5364m). The hike to Kala Patthar (5545m) offers the most iconic sunrise views of Everest."
           },
           {
             "name": "Mount Everest Base Camp Trek - 12 days",
             "current_price": 1950,
             "original_price": 2200,
-            "duration": "12 Days"
+            "duration": "12 Days",
+            "difficulty": "Strenuous",
+            "max_altitude": "5,545m (Kala Patthar)",
+            "description": "A slightly faster-paced version of the classic Everest Base Camp trek, designed for fit trekkers with good acclimatization strategies. This itinerary covers all the highlights, including Namche Bazaar, Tengboche, Everest Base Camp, and Kala Patthar, in a more condensed timeframe."
           },
           {
             "name": "Everest Three High Passes Trekking",
             "current_price": 2800,
-            "duration": "18-21 Days"
+            "duration": "18-21 Days",
+            "difficulty": "Very Strenuous",
+            "max_altitude": "5,535m (Kongma La Pass)",
+            "description": "The ultimate Everest challenge for experienced trekkers. This demanding trek crosses three spectacular high passes: Renjo La (5360m), Cho La (5420m), and Kongma La (5535m). It links the major valleys of the Khumbu region, including the Gokyo Lakes and Everest Base Camp, offering unparalleled mountain views and a true sense of wilderness adventure."
           },
           {
             "name": "Gokyo Valley and Everest Base Camp Trek",
             "current_price": 2650,
             "original_price": 2900,
-            "duration": "16-18 Days"
+            "duration": "16-18 Days",
+            "difficulty": "Strenuous",
+            "max_altitude": "5,545m (Kala Patthar) / 5,357m (Gokyo Ri)",
+            "description": "Combine the stunning turquoise Gokyo Lakes and the challenging ascent of Gokyo Ri with the classic Everest Base Camp trek. This route often involves crossing the Cho La Pass (5420m), offering a more comprehensive exploration of the Everest region with diverse landscapes and breathtaking vistas, including views of four 8000m peaks from Gokyo Ri."
           },
           {
             "name": "Gokyo Renjo La Pass Trekking",
             "current_price": 2400,
-            "duration": "14-16 Days"
+            "duration": "14-16 Days",
+            "difficulty": "Strenuous",
+            "max_altitude": "5,360m (Renjo La Pass) / 5,357m (Gokyo Ri)",
+            "description": "Explore the pristine Gokyo Valley with its series of emerald lakes and ascend Gokyo Ri for incredible panoramic views. This trek then crosses the Renjo La Pass, offering a less-trodden route into or out of the Gokyo Valley, often connecting with the Thame valley, known for its traditional Sherpa culture."
           },
           {
             "name": "EBC Chola Gokyo Lake Trekking",
             "current_price": 2750,
             "original_price": 3000,
             "discount_tag": "10% OFF",
-            "duration": "17-19 Days"
+            "duration": "17-19 Days",
+            "difficulty": "Strenuous",
+            "max_altitude": "5,545m (Kala Patthar) / 5,420m (Cho La Pass)",
+            "description": "A comprehensive and challenging trek that links Everest Base Camp with the Gokyo Lakes via the formidable Cho La Pass. This adventure showcases the best of the Khumbu region: iconic Everest views, the stunning Gokyo Valley, Sherpa culture, and the thrill of high-altitude pass crossing. Perfect for adventurers seeking a complete Everest experience."
           },
           {
             "name": "Everest Panorama Trek",
             "current_price": 1200,
-            "duration": "7-9 Days"
+            "duration": "7-9 Days",
+            "difficulty": "Moderate",
+            "max_altitude": "3,860m (Tengboche) or 3,962m (Hotel Everest View)",
+            "description": "Also known as the Everest View Trek, this shorter trek offers fantastic views of Mount Everest, Lhotse, Ama Dablam, and other Khumbu giants without going to extreme altitudes. Highlights include Namche Bazaar, the Sherpa capital, and the famous Tengboche Monastery. Ideal for those with limited time or preferring a less strenuous Everest experience."
           }
         ]
       },
       {
         "title": "Wilderness Region Trekking",
-        "description": "Venture into the less-traveled paths of Nepal's wilderness regions, offering solitude and untouched natural beauty.",
-        "image_url": "https://www.shutterstock.com/image-photo/trekking-nepal-himalayas-260nw-123456789.jpg"
+        "description": "Venture into Nepal's less-traveled and restricted trekking regions, offering unparalleled solitude, pristine natural beauty, and authentic cultural encounters. These treks often require special permits and are ideal for experienced adventurers seeking remote trails, untouched landscapes, and a deeper connection with ancient traditions far from the popular routes.",
+        "image_url": "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "available_treks": [
+          {
+            "name": "Upper Mustang Trek",
+            "current_price": 2800,
+            "duration": "14-17 Days",
+            "difficulty": "Moderate to Strenuous",
+            "max_altitude": "3,840m (Lo Manthang) / ~4000m on passes",
+            "description": "Explore the 'Forbidden Kingdom' of Upper Mustang, a culturally and geographically unique region with an arid, desert-like landscape, ancient Tibetan Buddhist monasteries, mysterious sky caves, and starkly beautiful rock formations. This trek offers a journey back in time into a preserved Tibetan culture."
+          },
+          {
+            "name": "Manaslu Circuit Trek",
+            "current_price": 1700,
+            "duration": "15-18 Days",
+            "difficulty": "Strenuous",
+            "max_altitude": "5,106m (Larkya La Pass)",
+            "description": "Circumnavigate the world's eighth highest mountain, Manaslu (8163m). This challenging trek offers a stunning variety of scenery, from subtropical forests to high alpine terrain, rich Tibetan-influenced culture, and the dramatic crossing of the Larkya La Pass. A great alternative to the Annapurna Circuit."
+          },
+          {
+            "name": "Kanchenjunga Base Camp Trek",
+            "current_price": 3200,
+            "duration": "20-25 Days",
+            "difficulty": "Very Strenuous",
+            "max_altitude": "5,143m (Pangpema - North Base Camp)",
+            "description": "Journey to the base of the world's third highest peak, Kanchenjunga (8586m), in remote eastern Nepal. This expedition-style trek takes you through pristine forests, diverse ethnic villages (Rai, Limbu, Sherpa), and offers incredible views of Kanchenjunga's massive glacial systems and surrounding peaks."
+          },
+          {
+            "name": "Dolpo Trekking",
+            "current_price": 3500,
+            "duration": "18-28 Days (varies by route)",
+            "difficulty": "Strenuous to Very Strenuous",
+            "max_altitude": "Over 5,000m on several passes",
+            "description": "Discover the mystical and remote Dolpo region in northwestern Nepal, known for its ancient Bon Po religion, stunning Phoksundo Lake, traditional Tibetan culture, and rugged, arid landscapes. Treks here, like Upper Dolpo, are challenging and require full camping logistics."
+          }
+        ]
       },
       {
         "title": "New Trekking Route",
-        "description": "Explore newly opened trekking routes in Nepal, providing fresh adventures and unique cultural encounters.",
-        "image_url": "https://mountainrocktreks.com/uploads/trekking/annapurna-base-camp-trek.jpg"
+        "description": "Be among the first to explore newly opened or less-documented trekking routes in Nepal. These adventures offer a chance to experience pristine wilderness, unique cultural encounters, and the thrill of discovery on trails that are still shaping their identity. Ideal for pioneering spirits looking for fresh perspectives on the Himalayas.",
+        "image_url": "https://images.pexels.com/photos/1525605/pexels-photo-1525605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "available_treks": [
+          {
+            "name": "Khopra Ridge Trek",
+            "current_price": 1100,
+            "duration": "9-12 Days",
+            "difficulty": "Moderate",
+            "max_altitude": "3,660m (Khopra Danda) / 4,600m (Khayar Lake optional day trip)",
+            "description": "A fantastic community-based lodge trek offering stunning panoramic views of the Annapurna and Dhaulagiri ranges from Khopra Ridge. This 'off-the-beaten-path' trek provides a quieter alternative to Poon Hill, with an optional challenging day hike to the sacred Khayar Lake."
+          },
+          {
+            "name": "Mohare Danda Trek",
+            "current_price": 900,
+            "duration": "7-9 Days",
+            "difficulty": "Easy to Moderate",
+            "max_altitude": "3,300m (Mohare Danda)",
+            "description": "Another excellent community lodge trek in the Annapurna foothills, Mohare Danda offers breathtaking Himalayan views comparable to Poon Hill but with fewer crowds. This eco-friendly trail supports local communities and provides an authentic cultural experience."
+          },
+          {
+            "name": "Nar Phu Valley Trek",
+            "current_price": 2200,
+            "duration": "16-19 Days",
+            "difficulty": "Strenuous",
+            "max_altitude": "5,320m (Kang La Pass)",
+            "description": "Venture into the remote and culturally distinct Nar and Phu valleys, hidden high in the Annapurna region near the Tibetan border. This trek offers a unique glimpse into an ancient Tibetan-influenced culture, dramatic landscapes, and the challenging crossing of the Kang La Pass to connect with the Annapurna Circuit."
+          }
+        ]
       }
     ]
   },
@@ -144,426 +265,326 @@
     "package_tours": [
       {
         "title": "Nepal Highlight Tour",
-        "description": "Experience the best of Nepal's cultural and natural wonders in this comprehensive highlight tour.",
-        "duration": "10 Days",
-        "altitude": "1400m (Kathmandu)",
-        "price": "From $1200",
-        "image_url": "https://www.shutterstock.com/search/nepal-highlight-tour"
+        "description": "Experience the essence of Nepal in a compact journey. This tour typically covers the ancient cultural wonders of Kathmandu Valley's UNESCO World Heritage Sites (Pashupatinath, Boudhanath, Swayambhunath, Durbar Squares), the natural beauty of Pokhara city with its serene lakes and Annapurna views, and often includes a wildlife safari in Chitwan National Park. Perfect for a first-time visitor.",
+        "duration": "10-12 Days",
+        "price_range": "$1200 - $1800",
+        "image_url": "https://example.com/images/nepal-highlight-tour.jpg"
       },
       {
         "title": "Upper Mustang Jeep Tour",
-        "description": "Explore the forbidden kingdom of Upper Mustang by jeep, witnessing unique landscapes and ancient Tibetan culture.",
+        "description": "Embark on an adventurous overland jeep safari to the mystical 'Forbidden Kingdom' of Upper Mustang. Traverse rugged terrain, witness dramatic arid landscapes reminiscent of Tibet, explore ancient monasteries, mysterious sky caves, and the walled city of Lo Manthang. This tour offers a unique cultural and geographical experience without extensive trekking.",
         "duration": "12-14 Days",
-        "altitude": "3800m (Lo Manthang)",
-        "price": "From $2500",
-        "image_url": "https://www.shutterstock.com/search/upper-mustang-jeep-tour"
+        "price_range": "$2500 - $3500 (includes special permit)",
+        "image_url": "https://example.com/images/upper-mustang-jeep.jpg"
       },
       {
         "title": "Everest Honeymoon Tour",
-        "description": "A romantic getaway with stunning views of Mount Everest, perfect for honeymooners seeking adventure and serenity.",
+        "description": "Celebrate your love amidst the world's highest peaks. This romantic tour combines cultural experiences in Kathmandu with a scenic flight or helicopter tour for breathtaking close-up views of Mount Everest and the surrounding Himalayas. Enjoy luxury accommodations and curated experiences for an unforgettable honeymoon.",
         "duration": "5-7 Days",
-        "altitude": "3880m (Hotel Everest View)",
-        "price": "From $1500",
-        "image_url": "https://www.shutterstock.com/search/everest-honeymoon-tour"
+        "price_range": "$1500 - $3000+ (depending on luxury level & heli options)",
+        "image_url": "https://example.com/images/everest-honeymoon.jpg"
       },
       {
         "title": "Annapurna Hiking Tour",
-        "description": "Enjoy breathtaking hikes in the Annapurna region, suitable for various fitness levels, offering stunning mountain vistas.",
+        "description": "Discover the foothills of the majestic Annapurna range through a series of rewarding day hikes or short multi-day treks. Enjoy stunning mountain vistas, walk through charming Gurung and Magar villages, experience local culture, and witness diverse flora and fauna. Tailored to various fitness levels, often based out of Pokhara.",
         "duration": "7-10 Days",
-        "altitude": "3210m (Poon Hill)",
-        "price": "From $900",
-        "image_url": "https://www.shutterstock.com/search/annapurna-hiking-tour"
+        "price_range": "$900 - $1400",
+        "image_url": "https://example.com/images/annapurna-hiking-tour.jpg"
       },
       {
-        "title": "Nagarkot Tour",
-        "description": "Witness spectacular sunrise and sunset views over the Himalayas from Nagarkot, a popular hill station near Kathmandu.",
-        "duration": "2 Days",
-        "altitude": "2195m",
-        "price": "From $150",
-        "image_url": "https://www.shutterstock.com/search/nagarkot-tour"
+        "title": "Nagarkot Sunrise & Bhaktapur Tour",
+        "description": "Witness a spectacular sunrise over the panoramic Himalayan range from Nagarkot, a popular hill station near Kathmandu. Combine this with a visit to the ancient city of Bhaktapur, a UNESCO World Heritage site renowned for its well-preserved medieval art, architecture, and vibrant Newari culture.",
+        "duration": "2 Days / 1 Night",
+        "price_range": "$150 - $250",
+        "image_url": "https://example.com/images/nagarkot-bhaktapur.jpg"
       },
       {
-        "title": "Kathmandu Buddhist Monuments Tour",
-        "description": "Explore the sacred Buddhist stupas and monasteries of Kathmandu Valley, including Boudhanath and Swayambhunath.",
-        "duration": "1 Day",
-        "altitude": "1400m",
-        "price": "From $80",
-        "image_url": "https://www.shutterstock.com/search/kathmandu-buddhist-tour"
-      },
-      {
-        "title": "Kathmandu Nagarkot Pokhara Tour 06 days",
-        "description": "A whirlwind tour covering the cultural heart of Kathmandu, Himalayan views from Nagarkot, and the lakeside beauty of Pokhara.",
-        "duration": "6 Days",
-        "altitude": "2195m (Nagarkot)",
-        "price": "From $750",
-        "image_url": "https://www.shutterstock.com/search/kathmandu-nagarkot-pokhara-tour"
-      },
-      {
-        "title": "Kathmandu City Tour",
-        "description": "Discover the ancient temples, palaces, and vibrant streets of Kathmandu city, a UNESCO World Heritage hub.",
-        "duration": "1 Day",
-        "altitude": "1400m",
-        "price": "From $70",
-        "image_url": "https://www.shutterstock.com/search/kathmandu-city-tour"
-      },
-      {
-        "title": "Nepal Culture Tour",
-        "description": "Immerse yourself in the rich and diverse cultures of Nepal, visiting historical sites and interacting with local communities.",
-        "duration": "8-10 Days",
-        "altitude": "1400m",
-        "price": "From $1000",
-        "image_url": "https://www.shutterstock.com/search/nepal-culture-tour"
-      },
-      {
-        "title": "Kathmandu Valley Tour",
-        "description": "Embark on a tour of Kathmandu Valley's UNESCO World Heritage sites, including Pashupatinath, Boudhanath, Swayambhunath, and Patan Durbar Square.",
+        "title": "Kathmandu Buddhist Circuit Tour",
+        "description": "Immerse yourself in the spiritual heart of Kathmandu by exploring its most sacred Buddhist sites. Visit the colossal Boudhanath Stupa, the ancient Swayambhunath Stupa (Monkey Temple), the serene Kopan Monastery (optional), and other significant monasteries, learning about Buddhist philosophy and practices.",
         "duration": "1-2 Days",
-        "altitude": "1400m",
-        "price": "From $70",
-        "image_url": "https://www.gettyimages.com/photos/kathmandu-valley"
+        "price_range": "$80 - $150",
+        "image_url": "https://example.com/images/kathmandu-buddhist-tour.jpg"
       },
       {
-        "title": "Everest View Tour",
-        "description": "Get magnificent views of Mount Everest and surrounding peaks without extensive trekking, typically involving a short hike or flight.",
-        "duration": "3-5 Days",
-        "altitude": "3880m (Hotel Everest View)",
-        "price": "From $600",
-        "image_url": "https://www.shutterstock.com/search/everest-view-tour"
+        "title": "Kathmandu Pokhara Chitwan Tour",
+        "description": "The 'Golden Triangle' of Nepal, this popular tour package combines the cultural richness of Kathmandu, the lakeside serenity and mountain views of Pokhara, and the thrilling wildlife adventures of Chitwan National Park. Offers a comprehensive experience of Nepal's diverse attractions.",
+        "duration": "8-10 Days",
+        "price_range": "$900 - $1500",
+        "image_url": "https://example.com/images/ktm-pokhara-chitwan.jpg"
+      },
+      {
+        "title": "Kathmandu City Sightseeing Tour",
+        "description": "Discover the historical and cultural treasures of Kathmandu city. This tour typically covers UNESCO World Heritage sites like Kathmandu Durbar Square, Pashupatinath Temple (sacred Hindu shrine), Boudhanath Stupa, and Swayambhunath Stupa, showcasing the city's rich artistic and religious heritage.",
+        "duration": "1 Day",
+        "price_range": "$70 - $120",
+        "image_url": "https://example.com/images/kathmandu-city-tour.jpg"
+      },
+      {
+        "title": "Nepal Cultural Immersion Tour",
+        "description": "Delve deep into the diverse cultures of Nepal. This tour might include homestays in traditional villages, participation in local festivals (if timing aligns), visits to artisan workshops, cooking classes, and interactions with various ethnic communities, offering an authentic and enriching experience beyond typical tourist sites.",
+        "duration": "8-14 Days",
+        "price_range": "$1000 - $2000",
+        "image_url": "https://example.com/images/nepal-culture-tour.jpg"
+      },
+      {
+        "title": "Kathmandu Valley Heritage Tour",
+        "description": "Explore the three ancient kingdoms of the Kathmandu Valley: Kathmandu, Patan, and Bhaktapur. Each city boasts its own magnificent Durbar Square (palace complex) and a wealth of temples, shrines, and traditional architecture, all recognized as UNESCO World Heritage Sites. A journey through Nepal's medieval history and Newari artistry.",
+        "duration": "2-3 Days",
+        "price_range": "$150 - $300",
+        "image_url": "https://example.com/images/kathmandu-valley-tour.jpg"
+      },
+      {
+        "title": "Everest View Mountain Flight Tour",
+        "description": "For those unable to trek, the Everest Mountain Flight offers a spectacular opportunity to witness Mount Everest and an array of other mighty Himalayan peaks from the comfort of an airplane. Enjoy an hour-long scenic flight with guaranteed window seats for breathtaking aerial views and photography.",
+        "duration": "1 Hour Flight (plus transfers)",
+        "price_range": "$200 - $250 per person",
+        "image_url": "https://example.com/images/everest-mountain-flight.jpg"
       }
     ]
   },
   {
     "peak_climbing": [
       {
-        "title": "Mustang, Saribung Peak Climb via Damodar Lake and Phu Valley",
-        "description": "An adventurous peak climbing journey through the remote Mustang region, combining Saribung Peak with the cultural richness of Damodar Kunda and Phu Valley.",
-        "duration": "28-30 Days",
-        "altitude": "6328m (Saribung Peak)",
-        "price": "From $4500",
-        "image_url": "https://www.shutterstock.com/search/saribung-peak-mustang"
+        "title": "Mera Peak Climbing (6,476m)",
+        "description": "Ascend Mera Peak, Nepal's highest designated 'trekking peak.' While technically straightforward, it demands excellent physical fitness due to its altitude. The summit rewards climbers with one of the most spectacular panoramic views in the Himalayas, encompassing five 8,000m giants: Everest, Lhotse, Cho Oyu, Makalu, and Kanchenjunga. The approach trek through the Hinku Valley is remote and beautiful.",
+        "duration": "16-19 Days",
+        "difficulty": "Alpine Grade PD (Peu Difficile)",
+        "price_range": "$2500 - $3500",
+        "image_url": "https://example.com/images/mera-peak.jpg"
       },
       {
-        "title": "Mera Peak Climbing",
-        "description": "Ascend Mera Peak, Nepal's highest trekking peak, known for its breathtaking vistas of five 8000m giants.",
-        "duration": "16 Days",
-        "altitude": "6476m",
-        "price": "From $2499",
-        "image_url": "https://www.shutterstock.com/search/mera-peak"
+        "title": "Island Peak Climbing (Imja Tse - 6,189m)",
+        "description": "Island Peak, or Imja Tse, is one of Nepal's most popular trekking peaks, often combined with the Everest Base Camp trek. It offers a fantastic introduction to Himalayan climbing, involving glacier travel, crevasse negotiation (sometimes), and a challenging final headwall ascent. The summit provides stunning close-up views of Lhotse, Nuptse, Makalu, and Ama Dablam.",
+        "duration": "16-20 Days (often 3-4 extra days if combined with EBC)",
+        "difficulty": "Alpine Grade PD+",
+        "price_range": "$2300 - $3300",
+        "image_url": "https://example.com/images/island-peak.jpg"
       },
       {
-        "title": "Island Peak Climbing",
-        "description": "Climb the popular Island Peak (Imja Tse), a favorite among trekkers seeking their first Himalayan summit in the Everest region.",
-        "duration": "16 Days",
-        "altitude": "6187m",
-        "price": "From $2299",
-        "image_url": "https://www.shutterstock.com/search/island-peak-nepal"
+        "title": "Lobuche East Peak Climbing (6,119m)",
+        "description": "Lobuche East offers a more technical and challenging climb than Island Peak or Mera Peak, making it suitable for those with some prior mountaineering experience. It involves steep snow/ice sections and often requires fixed ropes. The summit presents breathtaking views of Everest, Lhotse, Nuptse, Ama Dablam, and Pumori, located close to the Khumbu Glacier.",
+        "duration": "15-18 Days (often combined with EBC)",
+        "difficulty": "Alpine Grade PD+/AD-",
+        "price_range": "$2200 - $3200",
+        "image_url": "https://example.com/images/lobuche-peak.jpg"
       },
       {
-        "title": "Lobuche Peak Climbing",
-        "description": "Challenge yourself with a climb to Lobuche East Peak, offering panoramic views of the Everest region including Everest, Lhotse, Nuptse, Ama Dablam.",
-        "duration": "15 Days",
-        "altitude": "6119m",
-        "price": "From $2199",
-        "image_url": "https://www.shutterstock.com/search/lobuche-peak"
+        "title": "Yala Peak Climbing (5,520m)",
+        "description": "Located in the Langtang region, Yala Peak is considered one of the easiest and most accessible trekking peaks in Nepal, making it ideal for beginners with no prior climbing experience. The ascent is non-technical, primarily a challenging high-altitude walk. The summit offers magnificent views of Langtang Lirung, Dorje Lakpa, Ganesh Himal, and even Shishapangma in Tibet on a clear day.",
+        "duration": "11-14 Days (can be part of Langtang Valley trek)",
+        "difficulty": "Alpine Grade F (Facile - Easy)",
+        "price_range": "$1500 - $2200",
+        "image_url": "https://example.com/images/yala-peak.jpg"
       },
       {
-        "title": "Everest Three Peak Climbing: Mera, Island, Lobuche Peak",
-        "description": "An ultimate climbing adventure tackling three iconic trekking peaks in the Everest region: Mera Peak, Island Peak, and Lobuche East.",
-        "duration": "28-32 Days",
-        "altitude": "Up to 6476m (Mera Peak)",
-        "price": "From $4800",
-        "image_url": "https://www.shutterstock.com/search/everest-three-peaks-climbing"
+        "title": "Chulu West Peak Climbing (6,419m)",
+        "description": "Part of the Chulu massif in the Annapurna region, Chulu West presents a more challenging and semi-technical climb, suitable for experienced trekkers with basic mountaineering skills. It involves navigating glaciers and steep snow slopes. The summit offers stunning views of the Annapurna range, Dhaulagiri, Manaslu, and the arid landscapes of Mustang.",
+        "duration": "18-22 Days (often part of Annapurna Circuit)",
+        "difficulty": "Alpine Grade PD+",
+        "price_range": "$3000 - $4000",
+        "image_url": "https://example.com/images/chulu-west-peak.jpg"
       },
       {
-        "title": "Chulu East Peak Climbing",
-        "description": "Embark on a rewarding climb of Chulu East in the Annapurna region, offering stunning views of the Annapurna and Dhaulagiri ranges.",
-        "duration": "19 Days",
-        "altitude": "6584m",
-        "price": "From $3200",
-        "image_url": "https://www.shutterstock.com/search/chulu-east-peak"
+        "title": "Pisang Peak Climbing (6,091m)",
+        "description": "Situated on the Annapurna Circuit trail, Pisang Peak is a popular choice known for its pyramid shape and moderately technical ascent. It requires ice axe and crampon skills, and navigating a glaciated ridge. The summit offers superb views of the Annapurna range, Manaslu, Tilicho Peak, and the surrounding Manang Valley.",
+        "duration": "14-18 Days (often part of Annapurna Circuit)",
+        "difficulty": "Alpine Grade PD",
+        "price_range": "$2800 - $3800",
+        "image_url": "https://example.com/images/pisang-peak.jpg"
       },
       {
-        "title": "Tent Peak Climbing (Tharpu Chuli)",
-        "description": "Climb Tent Peak (Tharpu Chuli), located in the heart of the Annapurna Sanctuary, offering magnificent close-up views of Annapurna I and its surrounding peaks.",
-        "duration": "18 Days",
-        "altitude": "5663m",
-        "price": "From $2800",
-        "image_url": "https://www.shutterstock.com/search/tent-peak-tharpu-chuli"
-      },
-      {
-        "title": "Thorong Peak Climbing",
-        "description": "Combine the classic Annapurna Circuit trek with a climb of Thorong Peak, situated near the famous Thorong La Pass.",
-        "duration": "20 Days",
-        "altitude": "6144m",
-        "price": "From $3100",
-        "image_url": "https://www.shutterstock.com/search/thorong-peak"
-      },
-      {
-        "title": "Yala Peak Climbing",
-        "description": "Experience the thrill of climbing Yala Peak in the Langtang region, suitable for beginners seeking Himalayan adventure with great views of Shishapangma.",
-        "duration": "11 Days",
-        "altitude": "5520m",
-        "price": "From $1099",
-        "image_url": "https://www.shutterstock.com/search/yala-peak"
-      },
-      {
-        "title": "Amadablam Expedition in Nepal",
-        "description": "Climb the beautiful Ama Dablam in the Everest region, known for its challenging routes and stunning views. (Note: Often considered a full expedition rather than just a trekking peak).",
-        "duration": "26 Days",
-        "altitude": "6812m",
-        "image_url": "https://www.istockphoto.com/photos/ama-dablam"
-      },
-      {
-        "title": "Chulu West Peak Climbing",
-        "description": "Embark on an adventurous expedition to Chulu West Peak, a more challenging climb in the Annapurna Massif.",
-        "duration": "18 Days",
-        "altitude": "6419m",
-        "price": "From $2999",
-        "image_url": "https://www.shutterstock.com/search/chulu-west-peak"
-      },
-      {
-        "title": "Pisang Peak Climbing",
-        "description": "Climb the fascinating Pisang Peak in the Annapurna region, offering technical challenges and scenic beauty along the Annapurna Circuit route.",
-        "duration": "14 Days",
-        "altitude": "6091m",
-        "image_url": "https://www.shutterstock.com/search/pisang-peak"
+        "title": "Tent Peak Climbing (Tharpu Chuli - 5,663m)",
+        "description": "Located in the heart of the Annapurna Sanctuary, Tharpu Chuli (Tent Peak) offers a rewarding climb with magnificent close-up views of Annapurna I, Annapurna South, Hiunchuli, and Machhapuchhre. The climb involves glacier travel and some steeper snow sections, suitable for those with basic mountaineering skills looking for an adventure within the sanctuary.",
+        "duration": "18-21 Days (combined with Annapurna Base Camp Trek)",
+        "difficulty": "Alpine Grade PD",
+        "price_range": "$2800 - $3600",
+        "image_url": "https://example.com/images/tent-peak.jpg"
       }
     ]
   },
   {
     "nepal_expeditions": [
       {
-        "title": "Mt Everest Expedition",
-        "description": "Embark on the ultimate mountaineering challenge to summit Mt Everest, the world's highest peak.",
-        "duration": "60 Days",
-        "altitude": "8848m",
-        "image_url": "https://www.shutterstock.com/search/mount-everest-expedition"
+        "title": "Mt Everest Expedition (8,848.86m) - South Col Route",
+        "description": "Embark on the ultimate mountaineering challenge: to summit Mount Everest, the world's highest peak, via the historic South Col route from Nepal. This demanding expedition requires extensive high-altitude mountaineering experience, exceptional physical and mental endurance, and meticulous planning. Navigate the treacherous Khumbu Icefall, ascend the Lhotse Face, and push for the summit through the 'death zone'.",
+        "duration": "55-65 Days",
+        "difficulty": "Extreme / Expedition Grade",
+        "price_range": "$35,000 - $100,000+",
+        "image_url": "https://example.com/images/everest-expedition.jpg"
       },
       {
-        "title": "Dhaulagiri Expedition",
-        "description": "Challenge yourself with an expedition to Dhaulagiri, the seventh highest mountain in the world.",
-        "duration": "45 Days",
-        "altitude": "8167m",
-        "image_url": "https://www.shutterstock.com/search/dhaulagiri-expedition"
+        "title": "Manaslu Expedition (8,163m)",
+        "description": "Climb Mount Manaslu, the world's eighth highest mountain, often considered a good preparatory peak for Everest. Located in a restricted region of Nepal, it offers a challenging and rewarding ascent with stunning Himalayan scenery. The expedition involves setting up multiple camps, navigating glaciated terrain, and facing technical sections. Helicopter support for logistics is sometimes available.",
+        "duration": "40-50 Days",
+        "difficulty": "Very High / Expedition Grade",
+        "price_range": "$15,000 - $25,000",
+        "image_url": "https://example.com/images/manaslu-expedition.jpg"
       },
       {
-        "title": "Kanchenjunga Expedition",
-        "description": "Attempt to summit Kanchenjunga, the third highest mountain globally, offering a remote and demanding climb.",
-        "duration": "55 Days",
-        "altitude": "8586m",
-        "image_url": "https://www.shutterstock.com/search/kanchenjunga-expedition"
+        "title": "Ama Dablam Expedition (6,812m)",
+        "description": "Often described as one of the most beautiful mountains in the world, Ama Dablam offers a technically challenging and exhilarating climb. Located in the Khumbu region, it requires strong rock, snow, and ice climbing skills. The iconic SW ridge route is a classic, demanding commitment and experience on steep mixed terrain.",
+        "duration": "25-35 Days",
+        "difficulty": "High / Technical Alpine TD/ED",
+        "price_range": "$8,000 - $15,000",
+        "image_url": "https://example.com/images/amadablam-expedition.jpg"
       },
       {
-        "title": "Annapurna Expedition",
-        "description": "Take on the formidable Annapurna I, known for its technical difficulty and stunning beauty.",
-        "duration": "50 Days",
-        "altitude": "8091m",
-        "image_url": "https://www.shutterstock.com/search/annapurna-expedition"
+        "title": "Lhotse Expedition (8,516m)",
+        "description": "Tackle Lhotse, the world's fourth highest mountain, which shares much of its route with Everest up to Camp IV on the South Col. The final ascent involves a steep and challenging couloir. Often climbed as a standalone expedition or sometimes in conjunction with Everest by highly experienced mountaineers.",
+        "duration": "50-60 Days",
+        "difficulty": "Extreme / Expedition Grade",
+        "price_range": "$25,000 - $45,000",
+        "image_url": "https://example.com/images/lhotse-expedition.jpg"
       },
       {
-        "title": "Makalu Expedition",
-        "description": "Climb Makalu, the fifth highest mountain in the world, featuring impressive technical sections.",
-        "duration": "50 Days",
-        "altitude": "8485m",
-        "image_url": "https://www.shutterstock.com/search/makalu-expedition"
-      },
-      {
-        "title": "Manaslu Expedition with Helicopter",
-        "description": "Ascend Manaslu, the eighth highest peak, with the added convenience of helicopter support for logistics or return.",
-        "duration": "45 Days",
-        "altitude": "8163m",
-        "image_url": "https://www.shutterstock.com/search/manaslu-expedition-helicopter"
-      },
-      {
-        "title": "Manaslu Expedition",
-        "description": "Embark on a classic expedition to summit Manaslu, offering a rewarding climb in a restricted region.",
-        "duration": "45 Days",
-        "altitude": "8163m",
-        "image_url": "https://www.shutterstock.com/search/manaslu-expedition"
+        "title": "Makalu Expedition (8,485m)",
+        "description": "Climb Makalu, the world's fifth highest mountain, known for its impressive pyramid shape and challenging technical sections, particularly on the final ascent. Located in a remote part of eastern Nepal, the Makalu Barun National Park, this expedition offers a true wilderness experience for seasoned high-altitude climbers.",
+        "duration": "50-60 Days",
+        "difficulty": "Extreme / Expedition Grade",
+        "price_range": "$20,000 - $35,000",
+        "image_url": "https://example.com/images/makalu-expedition.jpg"
       }
     ]
   },
   {
     "nepal_rafting": [
       {
-        "title": "Bhotekoshi River Rafting",
-        "description": "Experience the thrill of whitewater rafting on the Bhotekoshi River, known for its challenging rapids.",
-        "duration": "1 Day",
-        "image_url": "https://www.shutterstock.com/search/bhotekoshi-river-rafting"
-      },
-      {
-        "title": "Kali Gandaki River Rafting",
-        "description": "Navigate the Kali Gandaki, one of Nepal’s most adventurous rivers, passing through gorges and remote villages.",
-        "duration": "3 Days",
-        "image_url": "https://www.shutterstock.com/search/kali-gandaki-river-rafting"
-      },
-      {
-        "title": "Karnali River Rafting",
-        "description": "Enjoy a long and exhilarating rafting experience on Nepal’s longest and mightiest river, the Karnali.",
-        "duration": "10 Days",
-        "image_url": "https://www.shutterstock.com/search/karnali-river-rafting"
-      },
-      {
-        "title": "Seti River Rafting",
-        "description": "Perfect for beginners and families, the Seti River offers gentle rapids and beautiful scenery.",
-        "duration": "2 Days",
-        "image_url": "https://www.shutterstock.com/search/seti-river-rafting"
-      },
-      {
-        "title": "Sunkoshi River Rafting",
-        "description": "A classic multi-day rafting trip, the Sunkoshi offers both thrilling rapids and serene float sections.",
-        "duration": "9 Days",
-        "image_url": "https://www.shutterstock.com/search/sunkoshi-river-rafting"
-      },
-      {
-        "title": "Trishuli River Rafting",
-        "description": "The most popular rafting river in Nepal, ideal for a short adventure from Kathmandu or Pokhara.",
+        "title": "Trishuli River Rafting (Class II-III+)",
+        "description": "The most popular rafting river in Nepal, easily accessible from Kathmandu and Pokhara. The Trishuli offers exciting rapids, beautiful scenery, and sandy beaches for camping (on multi-day trips). It's suitable for beginners and families, with rapids varying depending on the season and water volume. A great day trip or a 2-day adventure.",
         "duration": "1-2 Days",
-        "image_url": "https://www.shutterstock.com/search/trishuli-river-rafting"
+        "image_url": "https://example.com/images/trishuli-rafting.jpg"
+      },
+      {
+        "title": "Bhote Koshi River Rafting (Class IV-V)",
+        "description": "For adrenaline junkies, the Bhote Koshi offers one of the most challenging and exhilarating whitewater experiences in Nepal. This steep, fast-flowing river, originating from Tibet, provides continuous, intense rapids. Usually offered as a 1 or 2-day trip, it's best suited for experienced rafters or adventurous beginners under expert guidance.",
+        "duration": "1-2 Days",
+        "image_url": "https://example.com/images/bhotekoshi-rafting.jpg"
+      },
+      {
+        "title": "Seti River Rafting (Class II-III)",
+        "description": "A gentler and warmer river, the Seti is perfect for families, first-timers, and those looking for a more relaxed rafting or kayaking experience. The river flows through beautiful forested canyons and offers stunning views of the Annapurna mountains on clear days. Typically a 2-day trip with overnight camping on a sandy beach.",
+        "duration": "2 Days",
+        "image_url": "https://example.com/images/seti-rafting.jpg"
+      },
+      {
+        "title": "Kali Gandaki River Rafting (Class III-IV+)",
+        "description": "Raft through the world's deepest gorge, the Kali Gandaki, with the Dhaulagiri and Annapurna massifs towering on either side. This medium-length trip (typically 3 days) offers exciting rapids, beautiful remote scenery, traditional villages, waterfalls, and sandy beaches for camping. A good mix of adventure and cultural immersion.",
+        "duration": "3 Days",
+        "image_url": "https://example.com/images/kaligandaki-rafting.jpg"
+      },
+      {
+        "title": "Sun Koshi River Rafting (Class III-V)",
+        "description": "Considered one of the top ten classic river journeys in the world, the Sun Koshi offers a long and diverse expedition (7-9 days). Starting in the mountains and flowing towards the southern plains, it provides a full spectrum of whitewater, from thrilling rapids to calmer sections, passing through remote areas with varied landscapes and cultures.",
+        "duration": "7-9 Days",
+        "image_url": "https://example.com/images/sunkoshi-rafting.jpg"
       }
     ]
   },
   {
     "biking_tours": [
       {
-        "title": "Upper Mustang Biking Tour",
-        "description": "Embark on an adventurous mountain biking journey through the arid landscapes and ancient Tibetan culture of Upper Mustang.",
-        "duration": "10-14 Days",
-        "difficulty": "Challenging",
-        "price": "From $2200",
-        "image_url": "https://www.shutterstock.com/search/upper-mustang-biking"
+        "title": "Kathmandu Valley Rim Biking Tour",
+        "description": "Explore the scenic trails surrounding the Kathmandu Valley on a mountain bike. This tour offers a mix of challenging climbs, thrilling descents, and rides through traditional Newari villages, terraced farmlands, and lush forests. Enjoy panoramic Himalayan views from various points along the valley rim. Suitable for intermediate to advanced riders.",
+        "duration": "3-7 Days (can be customized)",
+        "difficulty": "Moderate to Challenging",
+        "price_range": "$300 - $800",
+        "image_url": "https://example.com/images/ktm-valley-biking.jpg"
       },
       {
         "title": "Annapurna Circuit Biking Tour",
-        "description": "Experience the classic Annapurna Circuit on two wheels, cycling through diverse terrains, high passes, and charming villages.",
+        "description": "Experience the legendary Annapurna Circuit on two wheels. This epic mountain biking adventure follows much of the classic trekking route, tackling high passes like Thorong La (5416m), diverse terrains from subtropical to alpine desert, and offering incredible cultural immersion. A demanding but highly rewarding journey for experienced mountain bikers.",
         "duration": "12-16 Days",
-        "difficulty": "Strenuous",
-        "price": "From $1800",
-        "image_url": "https://www.shutterstock.com/search/annapurna-circuit-biking"
+        "difficulty": "Strenuous to Very Strenuous",
+        "price_range": "$1800 - $2800",
+        "image_url": "https://example.com/images/annapurna-circuit-biking.jpg"
       },
       {
-        "title": "Annapurna Circuit with Upper Mustang Biking Tour",
-        "description": "A grand biking adventure combining the best of the Annapurna Circuit with the unique, restricted region of Upper Mustang.",
-        "duration": "18-22 Days",
-        "difficulty": "Very Strenuous",
-        "price": "From $3500",
-        "image_url": "https://www.shutterstock.com/search/annapurna-mustang-biking"
+        "title": "Upper Mustang Biking Tour",
+        "description": "Ride through the mystical 'Forbidden Kingdom' of Upper Mustang, a restricted region with a unique Tibetan-influenced culture and breathtaking arid landscapes. This challenging biking tour involves high-altitude riding, rough jeep tracks, and exploring ancient monasteries, walled cities like Lo Manthang, and dramatic rock formations. Requires a special permit.",
+        "duration": "10-14 Days",
+        "difficulty": "Challenging to Strenuous",
+        "price_range": "$2500 - $3500 (includes permit)",
+        "image_url": "https://example.com/images/upper-mustang-biking.jpg"
       }
     ]
   },
   {
     "helicopter_tours": [
       {
-        "title": "Langtang Helicopter Tour",
-        "description": "Enjoy a scenic helicopter flight to the beautiful Langtang Valley, offering close-up views of Langtang Lirung and surrounding peaks.",
-        "duration": "Approx 1.5 - 2 Hours (including ground time)",
-        "altitude": "Up to 4000m (Kyanjin Gompa area)",
-        "price": "From $1500 per person (group sharing)",
-        "image_url": "https://www.shutterstock.com/search/langtang-helicopter-tour"
+        "title": "Everest Base Camp Helicopter Tour with Landing",
+        "description": "An unforgettable luxury experience offering a bird's-eye view of the majestic Everest region. Fly parallel to the Himalayan range, land at Kala Patthar (5545m) for breathtaking close-up views of Mount Everest, Lhotse, Nuptse, and the Khumbu Glacier. Often includes breakfast at Hotel Everest View. Ideal for those with limited time or unable to trek.",
+        "duration": "Approx 3-4 Hours (including ground time & fuel stops)",
+        "altitude": "Landing up to 5,545m (Kala Patthar)",
+        "price_range": "$1000 - $1500 per person (group sharing)",
+        "image_url": "https://example.com/images/ebc-heli-tour.jpg"
       },
       {
-        "title": "Annapurna Helicopter Tour",
-        "description": "A breathtaking helicopter journey to Annapurna Base Camp, flying amidst towering peaks like Annapurna I, Machhapuchhre, and Hiunchuli.",
-        "duration": "Approx 2 - 2.5 Hours (including ground time)",
-        "altitude": "4130m (Annapurna Base Camp)",
-        "price": "From $1800 per person (group sharing)",
-        "image_url": "https://www.shutterstock.com/search/annapurna-helicopter-tour"
+        "title": "Annapurna Base Camp Helicopter Tour",
+        "description": "Soar into the heart of the Annapurna Sanctuary by helicopter. Witness the stunning amphitheater of peaks including Annapurna I, Annapurna South, Machhapuchhre, and Hiunchuli. Enjoy a short landing at Annapurna Base Camp (4130m) to soak in the incredible scenery. A spectacular way to experience the Annapurnas in a short time.",
+        "duration": "Approx 1.5 - 2.5 Hours (including ground time)",
+        "altitude": "Landing at 4,130m (Annapurna Base Camp)",
+        "price_range": "$900 - $1400 per person (group sharing)",
+        "image_url": "https://example.com/images/abc-heli-tour.jpg"
       },
       {
-        "title": "Everest Base Camp 5364m on Heli flight",
-        "description": "An iconic helicopter flight to Everest Base Camp (5364m) with a landing at Kala Patthar (5545m) for the best views of Mount Everest.",
-        "duration": "Approx 3 - 4 Hours (including ground time & fuel stops)",
-        "altitude": "5545m (Kala Patthar landing)",
-        "price": "From $1200 per person (group sharing)",
-        "image_url": "https://www.shutterstock.com/search/everest-base-camp-helicopter"
+        "title": "Langtang Valley Helicopter Tour",
+        "description": "Enjoy a scenic helicopter flight to the beautiful Langtang Valley, relatively close to Kathmandu. Get stunning aerial views of Langtang Lirung, Ganesh Himal, and other peaks in the region. Often includes a landing at Kyanjin Gompa (3870m) to experience the alpine environment and visit the local monastery. A great option for a quick Himalayan escape.",
+        "duration": "Approx 1 - 1.5 Hours (including ground time)",
+        "altitude": "Landing up to 3,870m (Kyanjin Gompa)",
+        "price_range": "$800 - $1200 per person (group sharing)",
+        "image_url": "https://example.com/images/langtang-heli-tour.jpg"
       },
       {
-        "title": "Explore Nepal, Annapurna Base Camp Tour in 3 Days",
-        "description": "A short and luxurious tour combining cultural exploration with a helicopter flight to Annapurna Base Camp over 3 days.",
-        "duration": "3 Days",
-        "altitude": "4130m (Annapurna Base Camp)",
-        "price": "From $2500 (package)",
-        "image_url": "https://www.shutterstock.com/search/annapurna-3-day-helicopter-tour"
-      },
-      {
-        "title": "GorakShep to Lukla Helicopter Tour",
-        "description": "A convenient helicopter shuttle from Gorak Shep (near Everest Base Camp) back to Lukla, saving days of trekking.",
-        "duration": "Approx 20-25 Minutes flight",
-        "altitude": "From 5164m (Gorak Shep) to 2860m (Lukla)",
-        "price": "From $600 per person (group sharing)",
-        "image_url": "https://www.shutterstock.com/search/gorakshep-lukla-helicopter"
-      },
-      {
-        "title": "Kathmandu to Lukla Helicopter Tour",
-        "description": "Fly directly from Kathmandu to Lukla by helicopter, bypassing the regular flight uncertainties and enjoying scenic views.",
-        "duration": "Approx 45-50 Minutes flight",
-        "altitude": "From 1400m (Kathmandu) to 2860m (Lukla)",
-        "price": "From $700 per person (group sharing)",
-        "image_url": "https://www.shutterstock.com/search/kathmandu-lukla-helicopter"
-      },
-      {
-        "title": "Nepal Himalaya Mountain Flight",
-        "description": "Enjoy a breathtaking flightseeing experience over the Himalayan range. Witness Mount Everest and other 8000m peaks without the need for trekking.",
-        "duration": "1 Hour (fixed-wing aircraft)",
-        "altitude": "Cruising altitude approx 6000-7000m",
-        "price": "From $250 per person",
-        "image_url": "https://www.shutterstock.com/search/nepal-mountain-flight"
+        "title": "Gosaikunda Helicopter Tour",
+        "description": "A spiritual and scenic helicopter journey to the sacred Gosaikunda Lakes, nestled high in the Langtang region. These alpine freshwater lakes are revered by both Hindus and Buddhists. The tour offers breathtaking views and a chance to land near the lakes (weather permitting) to appreciate their serene beauty.",
+        "duration": "Approx 1 - 1.5 Hours (including ground time)",
+        "altitude": "Landing near 4,380m (Gosaikunda area)",
+        "price_range": "$700 - $1100 per person (group sharing)",
+        "image_url": "https://example.com/images/gosaikunda-heli-tour.jpg"
       }
     ]
   },
   {
     "jungle_safari_and_hunting": [
       {
-        "title": "Chitwan Jungle Safari Tour",
-        "description": "Explore Nepal’s first national park, Chitwan National Park, home to endangered species like the one-horned rhinoceros and Bengal tiger. Enjoy jeep safaris, canoe rides, bird watching, and Tharu cultural performances.",
-        "duration": "2-3 Days",
-        "price": "From $200",
-        "image_url": "https://www.shutterstock.com/search/chitwan-jungle-safari"
+        "title": "Chitwan National Park Jungle Safari",
+        "description": "Explore Nepal’s first national park, a UNESCO World Heritage site renowned for its rich biodiversity. Embark on thrilling jeep safaris, canoe rides along the Rapti River, jungle walks, and bird watching tours. Encounter endangered species like the one-horned rhinoceros, Bengal tiger (if lucky), gharial crocodiles, sloth bears, and various deer species. Also experience Tharu cultural performances.",
+        "duration": "2 Nights / 3 Days (standard package)",
+        "price_range": "$200 - $400 (package dependent)",
+        "image_url": "https://example.com/images/chitwan-safari.jpg"
       },
       {
-        "title": "Blue Sheep Hunting Safari and Adventure",
-        "description": "Embark on a challenging hunting safari for Blue Sheep (Bharal) in the high-altitude regions of Nepal, a unique and regulated adventure.",
-        "duration": "15-20 Days",
-        "price": "Contact for details (permit-based)",
-        "image_url": "https://www.shutterstock.com/search/blue-sheep-hunting-nepal"
+        "title": "Bardiya National Park Wildlife Safari",
+        "description": "Venture into the wilder and more remote Bardiya National Park in western Nepal, offering a more pristine jungle experience and a higher chance of spotting Bengal tigers. Activities include jeep safaris, jungle walks, bird watching, and exploring the Karnali River for Gangetic dolphins and crocodiles. Ideal for serious wildlife enthusiasts seeking tranquility.",
+        "duration": "3 Nights / 4 Days (recommended)",
+        "price_range": "$300 - $600 (package dependent)",
+        "image_url": "https://example.com/images/bardiya-safari.jpg"
       },
       {
-        "title": "Hunting Himalaya Tahr",
-        "description": "A thrilling hunting expedition for the Himalayan Tahr in designated hunting reserves, offering a rugged mountain experience.",
-        "duration": "12-18 Days",
-        "price": "Contact for details (permit-based)",
-        "image_url": "https://www.shutterstock.com/search/himalayan-tahr-hunting"
-      },
-      {
-        "title": "Combo Hunting Adventure Safari",
-        "description": "A comprehensive hunting package that may include opportunities for multiple species like Blue Sheep and Himalayan Tahr, subject to permits and seasons.",
-        "duration": "20-25 Days",
-        "price": "Contact for details (permit-based)",
-        "image_url": "https://www.shutterstock.com/search/nepal-hunting-safari"
-      },
-      {
-        "title": "Bardiya Tour Package",
-        "description": "Discover the wilderness of Bardiya National Park, known for its tiger population, wild elephants, and diverse wildlife. Includes jeep safari, jungle walks, and cultural experiences.",
-        "duration": "3-4 Days",
-        "price": "From $300",
-        "image_url": "https://www.shutterstock.com/search/bardiya-national-park-safari"
+        "title": "Dhorpatan Hunting Reserve (Regulated Hunting)",
+        "description": "Nepal offers regulated trophy hunting in the Dhorpatan Hunting Reserve, the only hunting reserve in the country. Primarily targeting Blue Sheep (Bharal) and Himalayan Tahr, this is a challenging high-altitude hunt in a remote and rugged environment, requiring special permits and adherence to strict regulations. This is a highly specialized and controlled activity.",
+        "duration": "15-25 Days (expedition style)",
+        "price_range": "Contact for details (permit & trophy fees are substantial)",
+        "image_url": "https://example.com/images/dhorpatan-hunting.jpg"
       }
     ]
   },
   {
     "nepal_paragliding": {
-      "title": "Paragliding in Nepal",
-      "description": "Fly high above the Himalayas with tandem paragliding in Pokhara, one of the world's top paragliding destinations. Witness stunning aerial views of the Annapurna range and Phewa Lake.",
-      "duration": "30 Minutes to 1 Hour",
-      "image_url": "https://www.shutterstock.com/search/paragliding-in-nepal"
+      "title": "Paragliding in Pokhara",
+      "description": "Experience the thrill of flying like a bird over the stunning Phewa Lake with the majestic Annapurna mountain range as your backdrop. Pokhara is renowned as one of the world's best paragliding destinations due to its stable thermals and incredible scenery. Tandem flights with experienced pilots are available for everyone, offering an unforgettable aerial adventure. Options include standard flights, cross-country, and acrobatic flights.",
+      "duration": "20-60 Minutes (flight time)",
+      "price_range": "$70 - $150 (depending on flight duration/type)",
+      "image_url": "https://example.com/images/pokhara-paragliding.jpg"
     }
   },
   {
     "bunzy_jump_in_nepal": {
-      "title": "Bungee Jump in Nepal",
-      "description": "Leap off Nepal's iconic bungee jump bridges above the roaring Bhote Koshi River. This adrenaline-pumping activity is a favorite for thrill-seekers visiting Nepal.",
-      "duration": "1 Day",
-      "image_url": "https://www.shutterstock.com/search/bungee-jump-nepal"
+      "title": "Bungee Jumping & Swing at The Last Resort",
+      "description": "Take the plunge from one of the world's most spectacular bungee sites! Leap from a 160m high suspension bridge over the wild Bhote Koshi River gorge. Operated by The Last Resort, this is Nepal's original and iconic bungee jump. They also offer a thrilling tandem swing from the same bridge. An ultimate adrenaline rush for thrill-seekers in a stunning natural setting.",
+      "duration": "1 Day Trip (from Kathmandu)",
+      "price_range": "$100 - $150 (per jump/swing, packages available)",
+      "image_url": "https://example.com/images/nepal-bungee.jpg"
     }
   }
 ]

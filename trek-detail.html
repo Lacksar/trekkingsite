@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trek Detail - Himalayan Peaks</title>
+    <!-- Will be updated by JS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-bg-trek-detail {
+        background-size: cover;
+        background-position: center;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in-item {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800 antialiased">
+    <!-- Header (similar to trek-listing.html) -->
+    <header
+      id="page-hero"
+      class="relative h-[40vh] md:h-[50vh] flex flex-col hero-bg-trek-detail"
+    >
+      <nav class="absolute top-0 left-0 right-0 z-20 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+          <a
+            href="index.html"
+            class="text-white text-3xl font-bold tracking-tight"
+            >Himalayan<span class="text-yellow-400">Peaks</span></a
+          >
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html#home" class="text-white hover:text-yellow-400"
+              >Home</a
+            >
+            <a
+              href="nepal-categories.html"
+              class="text-white hover:text-yellow-400"
+              >Categories</a
+            >
+            <a
+              href="index.html#reviews"
+              class="text-white hover:text-yellow-400"
+              >Reviews</a
+            >
+            <a
+              href="index.html#contact"
+              class="text-white hover:text-yellow-400"
+              >Contact</a
+            >
+          </div>
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute top-16 left-0 right-0 bg-black bg-opacity-90 z-10 p-4"
+      >
+        <a
+          href="index.html#home"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Home</a
+        >
+        <a
+          href="nepal-categories.html"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Categories</a
+        >
+        <a
+          href="index.html#reviews"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Reviews</a
+        >
+        <a
+          href="index.html#contact"
+          class="block text-white py-2 px-4 hover:bg-yellow-500 hover:text-black rounded"
+          >Contact</a
+        >
+      </div>
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div
+        class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4"
+      >
+        <h1
+          id="trek-main-title"
+          class="text-4xl md:text-6xl text-white font-extrabold mb-4 drop-shadow-lg"
+        >
+          Loading Trek...
+        </h1>
+      </div>
+    </header>
+
+    <main class="py-10 md:py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Breadcrumbs -->
+        <div id="trek-detail-breadcrumb" class="mb-8 text-sm text-gray-600">
+          <a href="index.html" class="hover:text-yellow-600">Home</a> »
+          <a href="nepal-categories.html" class="hover:text-yellow-600"
+            >Nepal Categories</a
+          >
+          »
+          <a
+            id="breadcrumb-parent-category-link"
+            href="#"
+            class="hover:text-yellow-600"
+          >
+            <span id="breadcrumb-parent-category">Parent Category</span>
+          </a>
+          »
+          <a id="breadcrumb-region-link" href="#" class="hover:text-yellow-600">
+            <span id="breadcrumb-current-region">Region</span>
+          </a>
+          »
+          <span id="breadcrumb-current-trek" class="font-semibold text-gray-800"
+            >Current Trek</span
+          >
+        </div>
+
+        <div
+          id="trek-content-container"
+          class="bg-white shadow-xl rounded-lg overflow-hidden"
+        >
+          <!-- Populated by JS -->
+          <div
+            id="loading-trek-detail"
+            class="p-8 text-center text-gray-600 text-lg"
+          >
+            <i class="fas fa-spinner fa-spin fa-2x mb-3"></i>
+            <p>Loading trek details...</p>
+          </div>
+          <div id="trek-detail-content" class="hidden">
+            <!-- Image will be set as background to a div or an img tag -->
+            <!-- For simplicity, let's use the region image as hero and then show details -->
+
+            <div class="p-6 md:p-8 lg:p-10">
+              <!-- Price, Duration, Difficulty, Altitude Row -->
+              <div
+                class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6 border-b pb-6"
+              >
+                <div
+                  class="text-center fade-in-item"
+                  style="animation-delay: 0.1s"
+                >
+                  <i class="fas fa-dollar-sign fa-2x text-yellow-500 mb-2"></i>
+                  <p class="text-sm text-gray-500">Price</p>
+                  <p id="trek-price" class="text-lg font-semibold"></p>
+                </div>
+                <div
+                  class="text-center fade-in-item"
+                  style="animation-delay: 0.2s"
+                >
+                  <i class="far fa-clock fa-2x text-yellow-500 mb-2"></i>
+                  <p class="text-sm text-gray-500">Duration</p>
+                  <p id="trek-duration" class="text-lg font-semibold"></p>
+                </div>
+                <div
+                  class="text-center fade-in-item"
+                  style="animation-delay: 0.3s"
+                >
+                  <i class="fas fa-mountain fa-2x text-yellow-500 mb-2"></i>
+                  <p class="text-sm text-gray-500">Max Altitude</p>
+                  <p id="trek-altitude" class="text-lg font-semibold"></p>
+                </div>
+                <div
+                  class="text-center fade-in-item"
+                  style="animation-delay: 0.4s"
+                >
+                  <i
+                    class="fas fa-tachometer-alt fa-2x text-yellow-500 mb-2"
+                  ></i>
+                  <p class="text-sm text-gray-500">Difficulty</p>
+                  <p id="trek-difficulty" class="text-lg font-semibold"></p>
+                </div>
+              </div>
+
+              <!-- Description -->
+              <div
+                class="prose max-w-none lg:prose-lg text-gray-700 mb-8 fade-in-item"
+                style="animation-delay: 0.5s"
+              >
+                <h2 class="text-2xl font-semibold text-gray-800 mb-3">
+                  Overview
+                </h2>
+                <p id="trek-description"></p>
+              </div>
+
+              <!-- Placeholder for more sections like Itinerary, Gallery etc. -->
+              <!-- For example:
+                        <div class="mb-8 fade-in-item" style="animation-delay: 0.6s;">
+                            <h2 class="text-2xl font-semibold text-gray-800 mb-3">Itinerary Highlights</h2>
+                            <ul id="trek-itinerary" class="list-disc list-inside pl-5 text-gray-700">
+                                <li>Day 1: Arrival in Kathmandu</li>
+                                <li>Day 2: Fly to Lukla, Trek to Phakding</li>
+                                 (Populate this from data.json if you add itinerary later)
+                            </ul>
+                        </div>
+                        -->
+
+              <div
+                class="text-center mt-8 fade-in-item"
+                style="animation-delay: 0.7s"
+              >
+                <a
+                  href="#contact-form-on-index"
+                  class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300"
+                >
+                  Inquire Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="trek-not-found"
+          class="hidden text-center text-gray-600 text-xl py-10"
+        >
+          <i class="fas fa-hiking fa-3x mb-4 text-gray-400"></i>
+          <p>Sorry, the requested trek could not be found.</p>
+          <a
+            href="nepal-categories.html"
+            class="mt-4 inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-semibold py-2 px-6 rounded-lg"
+          >
+            Back to Categories
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer (similar to trek-listing.html) -->
+    <footer class="bg-gray-900 text-gray-400 py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div>
+            <h4 class="text-xl font-semibold text-white mb-4">
+              Himalayan<span class="text-yellow-400">Peaks</span>
+            </h4>
+            <p class="text-sm mb-4 leading-relaxed">
+              Your trusted partner for extraordinary adventures.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
+                ><i class="fab fa-facebook-f fa-lg"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-yellow-400"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-4">Explore</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="index.html#home" class="hover:text-yellow-400">Home</a>
+              </li>
+              <li>
+                <a href="nepal-categories.html" class="hover:text-yellow-400"
+                  >All Categories</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+              <li><a href="#" class="hover:text-yellow-400">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#" class="hover:text-yellow-400">Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-yellow-400">Privacy Policy</a>
+              </li>
+              <li><a href="#" class="hover:text-yellow-400">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+            <address class="text-sm not-italic space-y-2">
+              <p>
+                <i class="fas fa-map-marker-alt mr-2 text-yellow-400"></i
+                >Kathmandu, Nepal
+              </p>
+              <p>
+                <i class="fas fa-phone mr-2 text-yellow-400"></i>+977 12345678
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-2 text-yellow-400"></i
+                >info@himalayanpeaks.com
+              </p>
+            </address>
+          </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+          <p class="text-sm">
+            © <span id="currentYear"></span> HimalayanPeaks. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener("click", () =>
+          mobileMenu.classList.toggle("hidden")
+        );
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () =>
+            mobileMenu.classList.add("hidden")
+          );
+        });
+      }
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      function formatCategoryTitleForDisplay(key) {
+        if (!key) return "Category";
+        return key
+          .replace(/_/g, " ")
+          .replace(/\b\w/g, (char) => char.toUpperCase());
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoryKeyParam = urlParams.get("category");
+        const regionTitleParam = decodeURIComponent(
+          urlParams.get("regionTitle") || ""
+        );
+        const trekNameParam = decodeURIComponent(
+          urlParams.get("trekName") || ""
+        );
+
+        const pageHero = document.getElementById("page-hero");
+        const trekMainTitle = document.getElementById("trek-main-title");
+        const loadingDiv = document.getElementById("loading-trek-detail");
+        const contentDiv = document.getElementById("trek-detail-content");
+        const notFoundDiv = document.getElementById("trek-not-found");
+
+        // Breadcrumb elements
+        const breadcrumbParentCategoryEl = document.getElementById(
+          "breadcrumb-parent-category"
+        );
+        const breadcrumbParentCategoryLinkEl = document.getElementById(
+          "breadcrumb-parent-category-link"
+        );
+        const breadcrumbRegionEl = document.getElementById(
+          "breadcrumb-current-region"
+        );
+        const breadcrumbRegionLinkEl = document.getElementById(
+          "breadcrumb-region-link"
+        );
+        const breadcrumbTrekEl = document.getElementById(
+          "breadcrumb-current-trek"
+        );
+
+        if (!categoryKeyParam || !regionTitleParam || !trekNameParam) {
+          trekMainTitle.textContent = "Trek Information Missing";
+          if (loadingDiv) loadingDiv.style.display = "none";
+          if (notFoundDiv) {
+            notFoundDiv.style.display = "block";
+            notFoundDiv.querySelector("p").textContent =
+              "Could not load trek details. Required information is missing from the link.";
+          }
+          return;
+        }
+
+        fetch("data.json")
+          .then((response) => {
+            if (!response.ok)
+              throw new Error(`HTTP error! status: ${response.status}`);
+            return response.json();
+          })
+          .then((data) => {
+            const categoryObject = data.find((obj) =>
+              obj.hasOwnProperty(categoryKeyParam)
+            );
+            if (!categoryObject || !categoryObject[categoryKeyParam]) {
+              throw new Error(`Category "${categoryKeyParam}" not found.`);
+            }
+
+            const regionObject = categoryObject[categoryKeyParam].find(
+              (item) => item.title === regionTitleParam
+            );
+            if (!regionObject) {
+              throw new Error(
+                `Region "${regionTitleParam}" not found in category "${categoryKeyParam}".`
+              );
+            }
+
+            const trekObject = regionObject.available_treks?.find(
+              (trek) => trek.name === trekNameParam
+            );
+            if (!trekObject) {
+              throw new Error(
+                `Trek "${trekNameParam}" not found in region "${regionTitleParam}".`
+              );
+            }
+
+            // Populate Page
+            document.title = `${trekObject.name} - Himalayan Peaks`;
+            trekMainTitle.textContent = trekObject.name;
+
+            // Set hero background (using region's image for now)
+            const heroImageUrl =
+              regionObject.image_url ||
+              "https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1"; // Default
+            if (pageHero)
+              pageHero.style.backgroundImage = `url('${heroImageUrl}')`;
+
+            // Populate trek details
+            document.getElementById("trek-price").textContent =
+              trekObject.current_price ? `$${trekObject.current_price}` : "N/A";
+            if (trekObject.original_price) {
+              const priceEl = document.getElementById("trek-price");
+              priceEl.innerHTML += ` <span class="text-sm text-gray-500 line-through ml-1">$${trekObject.original_price}</span>`;
+            }
+            document.getElementById("trek-duration").textContent =
+              trekObject.duration || "N/A";
+            document.getElementById("trek-altitude").textContent =
+              trekObject.max_altitude || "N/A";
+            document.getElementById("trek-difficulty").textContent =
+              trekObject.difficulty || "N/A";
+            document.getElementById("trek-description").innerHTML =
+              trekObject.description
+                ? trekObject.description.replace(/\n/g, "<br>")
+                : "No description available.";
+
+            // Update Breadcrumbs
+            const parentCategoryFormatted =
+              formatCategoryTitleForDisplay(categoryKeyParam);
+            breadcrumbParentCategoryEl.textContent = parentCategoryFormatted;
+            breadcrumbParentCategoryLinkEl.href = `nepal-activities-by-category.html?category=${encodeURIComponent(
+              categoryKeyParam
+            )}`;
+
+            breadcrumbRegionEl.textContent = regionTitleParam;
+            breadcrumbRegionLinkEl.href = `trek-listing.html?category=${encodeURIComponent(
+              categoryKeyParam
+            )}&regionTitle=${encodeURIComponent(regionTitleParam)}`;
+
+            breadcrumbTrekEl.textContent = trekObject.name;
+
+            if (loadingDiv) loadingDiv.style.display = "none";
+            if (contentDiv) contentDiv.classList.remove("hidden");
+          })
+          .catch((error) => {
+            console.error("Error loading trek details:", error);
+            trekMainTitle.textContent = "Error Loading Trek";
+            if (loadingDiv) loadingDiv.style.display = "none";
+            if (notFoundDiv) {
+              notFoundDiv.style.display = "block";
+              notFoundDiv.querySelector(
+                "p"
+              ).innerHTML = `Sorry, the requested trek could not be loaded. <br><small>${error.message}</small>`;
+            }
+          });
+      });
+    </script>
+  </body>
+</html>

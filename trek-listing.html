@@ -158,7 +158,10 @@
             Fetching treks...
           </p>
           <!-- Grid for trek cards -->
-          <div id="treks-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div
+            id="treks-grid"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
             <!-- Individual trek cards will be injected here -->
           </div>
         </div>
@@ -289,29 +292,65 @@
           .replace(/\b\w/g, (char) => char.toUpperCase());
       }
 
-      // Creates a card for an individual trek name
-      function createIndividualTrekCard(trekName, regionImageUrl) {
-        // Ideally, each trek would have its own details page.
-        // For now, the link is a placeholder.
-        const trekDetailLink = `#trek-detail-${trekName
-          .toLowerCase()
-          .replace(/\s+/g, "-")}`;
+      // Creates a card for an individual trek
+      function createIndividualTrekCard(
+        trek,
+        regionImageUrl,
+        categoryKey,
+        regionTitle
+      ) {
+        // Added categoryKey and regionTitle
+        // Construct the link to trek-detail.html with URL parameters
+        const trekDetailLink = `trek-detail.html?category=${encodeURIComponent(
+          categoryKey
+        )}&regionTitle=${encodeURIComponent(
+          regionTitle
+        )}&trekName=${encodeURIComponent(trek.name)}`;
+
         const placeholderTrekImage =
-          "https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"; // Generic mountain icon
+          "https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1";
+
+        let priceHtml = `<p class="text-lg md:text-xl text-green-600 font-bold">$${trek.current_price}</p>`;
+        if (trek.original_price) {
+          priceHtml += `<p class="text-sm text-gray-500 line-through ml-2">$${trek.original_price}</p>`;
+        }
+
+        // Use the trek-specific description if available, otherwise a short default.
+        const cardDescription =
+          trek.description && trek.description.length > 10 // Check if it's a real description
+            ? `<p class="text-sm text-gray-700 mt-2 line-clamp-3" title="${trek.description}">${trek.description}</p>`
+            : ""; // If no good description, don't show it on the card, or show a generic one.
 
         return `
-                <a href="${trekDetailLink}" class="block  rounded-lg   transition-all duration-300 ease-out overflow-hidden group transform hover:-translate-y-1">
-                    <div class="h-96 mr-30 ml-30 bg-cover bg-center" style="background-image: url('${
-                      regionImageUrl || placeholderTrekImage
-                    }')">
-                        <!-- Could add an overlay here if needed -->
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-yellow-600 mb-1">${trekName}</h3>
-                        <p class="text-2xl text-green-400">$400 </p>
-                    </div>
-                </a>
-            `;
+        <a href="${trekDetailLink}" class="block bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-out overflow-hidden group transform hover:-translate-y-1 flex flex-col">
+            <div class="h-56 sm:h-64 bg-cover bg-center" style="background-image: url('${
+              regionImageUrl || placeholderTrekImage // Use region image for card
+            }')">
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+                <h3 class="text-xl md:text-2xl font-semibold text-gray-800 group-hover:text-yellow-600 mb-2 truncate" title="${
+                  trek.name
+                }">
+                    ${trek.name}
+                </h3>
+                <div class="flex items-baseline mb-2">
+                    ${priceHtml}
+                </div>
+                <p class="text-sm text-gray-600 mb-2"><i class="far fa-clock mr-1 text-gray-500"></i> ${
+                  trek.duration
+                }</p>
+                ${
+                  trek.discount_tag
+                    ? `<span class="inline-block bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded mb-2">${trek.discount_tag}</span>`
+                    : ""
+                }
+                ${cardDescription}
+                <div class="mt-auto pt-2">
+                     <span class="text-sm text-yellow-600 hover:text-yellow-700 font-semibold">View Details →</span>
+                </div>
+            </div>
+        </a>
+    `;
       }
 
       document.addEventListener("DOMContentLoaded", () => {
@@ -393,7 +432,6 @@
               );
 
               if (regionObject) {
-                // Set hero image from the region object if available, else default
                 const heroForRegion =
                   regionObject.image_url ||
                   regionSpecificHeroImages[displayRegionTitle] ||
@@ -407,11 +445,12 @@
                   regionObject.available_treks.length > 0
                 ) {
                   let treksHtml = "";
-                  regionObject.available_treks.forEach((trekName) => {
-                    // Pass regionObject.image_url to be used as a background for individual trek cards
+                  regionObject.available_treks.forEach((trekDetails) => {
                     treksHtml += createIndividualTrekCard(
-                      trekName,
-                      "images/trekking.jpeg" || regionObject.image_url
+                      trekDetails,
+                      regionObject.image_url, // Region's image for the card
+                      categoryKeyParam, // Pass the category key
+                      displayRegionTitle // Pass the region title
                     );
                   });
                   treksGrid.innerHTML = treksHtml;
@@ -419,6 +458,7 @@
                   if (treksGridContainer)
                     treksGridContainer.style.display = "block";
 
+                  // Animation for cards
                   const animatedCards = treksGrid.querySelectorAll(".block");
                   animatedCards.forEach((card, index) => {
                     card.style.opacity = "0";
@@ -429,7 +469,7 @@
                     setTimeout(() => {
                       card.style.opacity = "1";
                       card.style.transform = "translateY(0)";
-                    }, index * 60 + 50); // Staggered animation
+                    }, index * 60 + 50);
                   });
                 } else {
                   if (treksGridContainer)
